@@ -109,7 +109,8 @@
     g.append("path").attr("d", arc({ startAngle: x(opts.lo), endAngle: x(mid) })).attr("fill", css("--rep-l")).attr("opacity", 0.55);
     g.append("path").attr("d", arc({ startAngle: x(mid), endAngle: x(opts.hi) })).attr("fill", css("--dem-l")).attr("opacity", 0.55);
     if (opts.band && opts.band[0] !== null && opts.band[1] !== null) {
-      g.append("path").attr("d", arc({ startAngle: x(opts.band[0]), endAngle: x(opts.band[1]) })).attr("fill", opts.value >= mid ? css("--dem") : css("--rep")).attr("opacity", 0.5);
+      // the uncertainty band is always purple (the "tie" color), never a party color
+      g.append("path").attr("d", arc({ startAngle: x(opts.band[0]), endAngle: x(opts.band[1]) })).attr("fill", css("--tie")).attr("opacity", 0.85);
     }
     // ticks
     const ticks = opts.ticks || x.ticks(6);

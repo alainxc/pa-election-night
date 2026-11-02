@@ -3,7 +3,21 @@
 Site: https://alainxc.github.io/pa-election-night/ (Senate at `/`, House at `/house.html`, seat pages at `/seat.html?seat=S46`).
 Repository: https://github.com/alainxc/pa-election-night (public; Pages deploys from `docs/` by Actions on every push, about 30 to 60 seconds).
 
-## Before 8 pm (any time Tuesday)
+## Hands-off mode (recommended): arm it today, do nothing tomorrow
+
+```bash
+./arm.sh
+```
+
+That installs a per-user scheduled job (launchd) that starts the poller at 7:55 pm on November 3. The poller resets the rehearsal state, waits until 8:00 pm, then polls both chambers every 3 minutes and pushes, with `caffeinate` keeping the Mac awake while it runs. Requirements: the Mac is powered on, plugged in, and you are logged in at 7:55 pm (a locked screen is fine; if it is asleep, the job fires on wake). Check it is armed with:
+
+```bash
+launchctl print gui/$(id -u)/com.pa-election-night.poll | head -5
+```
+
+`./disarm.sh` removes the schedule; `./stop.sh` stops the poller once it is running. Logs land in `logs/poll.log` as usual. The only optional manual step left is the mail ballot file (step 3 below); everything else happens on its own.
+
+## Before 8 pm (manual path, if you prefer to run it yourself)
 
 1. Open a terminal in this folder (`cd ~/Desktop/pa-election-night`).
 2. Make sure the state feed answers and the election is still ID 117 / type G:
