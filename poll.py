@@ -262,7 +262,10 @@ def compute_estimates(chamber, snapshot, priors, baseline, mail, state, now_ts):
         est = needle.estimate_seat({"mu": p["mu"], "sd": p["sd"], "fixed_prob": p["fixed_prob"],
                                     "dem_side": p["dem_side"], "ref_margin": p["ref_margin"]},
                                    b, by_seat.get(key, []), extra)
-        disp_state[key] = needle.damp(disp_state.get(key), est, now_ts)
+        if est["fixed"]:
+            disp_state[key] = {"mu": est["mu"], "sd": est["sd"], "p_dem": est["p_dem"], "target_mu": est["mu"], "swing_until": 0}
+        else:
+            disp_state[key] = needle.damp(disp_state.get(key), est, now_ts)
         d = disp_state[key]
         if est["fixed"]:
             pd, prr = (est["p_dem"], 1 - est["p_dem"]) if p["dem_side"] == "DEM" else (0.0, 1 - est["p_dem"])
@@ -356,7 +359,7 @@ def run_cycle(a, client, cycle_no, replay_file=None):
         # internal consistency: county rows (GetCountyBreak) must sum to the
         # statewide contest totals (GetOfficeDetails); a mismatch means the
         # state's two endpoints were mid-update when we read them
-        cons = consistency_check(snap)
+        cons = consistency_check(snap) if not replay_file else {"ok": None, "note": "skipped in replay"}
         if cons["ok"] is False:
             logging.warning("consistency: %d seats where county sums differ from statewide totals (max %s)",
                             cons["seats_off"], cons["max_abs_diff"])

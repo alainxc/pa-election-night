@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pennsylvania House 2026: Election Night</title>
+<meta name="description" content="Live, unofficial election-night tracker for the 203 Pennsylvania House seats on the November 3, 2026 ballot: a needle estimate per seat and for control of the chamber, from county-level returns.">
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+</head>
+<body data-chamber="house">
+<header class="top">
+  <a class="brand" href="index.html">PA Legislature: Election Night</a>
+  <nav><a href="index.html">Senate</a><a href="house.html" id="nav-house" class="active">House</a><a href="methods.html">Methods</a></nav>
+</header>
+<main>
+  <h1>Who controls the Pennsylvania House?</h1>
+  <p class="sub">Unofficial county-level returns from the Pennsylvania Department of State, read every 3 minutes. The numbers below are this tracker's estimates, not official results and not race calls. All 203 seats are on the ballot. 102 is a majority.</p>
+  <div class="status">
+    <span><span class="dot" id="dot"></span><span id="updated">loading…</span></span>
+    <span id="precincts"></span>
+    <span id="source-time"></span>
+  </div>
+  <div class="banner hidden" id="banner"></div>
+
+  <div class="grid two">
+    <div class="card needle-wrap">
+      <div class="needle-wrap" id="chamber-needle"></div>
+      <div class="odds" id="chamber-odds"></div>
+      <p class="small" id="chamber-note"></p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">How the odds moved tonight</h3>
+      <div id="chamber-timeline"></div>
+      <p class="small">Probability of each outcome at each refresh, and the estimated number of Democratic seats (dotted, right axis). Flat lines before 8 pm mean no returns yet.</p>
+    </div>
+  </div>
+
+  <h2>The 203 seats</h2>
+  <p class="sub">Click a seat for county-by-county detail. Margin is the Democratic-side two-party margin: positive means the Democrat leads. The range is the tracker's 90 percent interval. "% in" is counted votes as a share of the vote the tracker expects for the seat, so it can exceed 100 when turnout beats expectations.</p>
+  <div class="legend"><span><i style="background:var(--dem)"></i>Dem side</span><span><i style="background:var(--rep)"></i>Rep</span><span><i style="background:var(--tie)"></i>uncertain</span><span>Status: toss-up · leaning (80%) · likely (95%) · called by tracker (99% and 90% in)</span></div>
+  <div class="tablewrap"><table id="seats"><thead><tr>
+    <th data-k="seat">Seat</th><th data-k="cands">Candidates</th><th data-k="p">Needle</th>
+    <th data-k="mu" class="num">Est. margin</th><th data-k="frac" class="num">% in</th><th data-k="status">Status</th>
+    <th data-k="prior" class="num hide-sm">Forecast</th><th data-k="holder" class="hide-sm">Held by</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="small">Forecast column: the pre-election forecast's mean margin and rating. Seats marked "fixed" had no major-party opponent; their probability is held at the forecast's value and they are not estimated from returns.</p>
+</main>
+<footer>Data: Pennsylvania Department of State unofficial returns (electionreturns.pa.gov), with 2020–2024 county and precinct returns for the benchmarks. Estimates are produced by a transparent model described on the <a href="methods.html">Methods</a> page. They are not calls. Official results are certified by counties and the Department of State weeks after the election.</footer>
+<script src="assets/needle.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

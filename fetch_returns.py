@@ -28,6 +28,9 @@ import sys
 import time
 
 import requests
+from concurrent.futures import ThreadPoolExecutor
+
+WORKERS = 4  # concurrent requests; keep small to stay polite to the state site
 
 BASE = "https://www.electionreturns.pa.gov/"
 API = BASE + "api/ElectionReturn/"
@@ -341,8 +344,10 @@ def build_snapshot(c, election_id=None, election_type=None, is_active_override=N
     # 3. Per-county breakdown for every seat
     rows = []
     counties = set()
-    for s in seats:
-        cb = get_county_break(c, election, office["OfficeID"], s["district_id"])
+    # a few requests in flight at once (one session); the House has 203 contests
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        breaks = list(pool.map(lambda s: get_county_break(c, election, office["OfficeID"], s["district_id"]), seats))
+    for s, cb in zip(seats, breaks):
         if cb is None:
             print(f"warn: no county breakdown for {s['district']}", file=sys.stderr)
             continue
@@ -370,8 +375,10 @@ def build_snapshot(c, election_id=None, election_type=None, is_active_override=N
     # 4. Per-county precincts reporting (county-wide, not per contest)
     county_rep = {}
     if county_reporting:
-        for county in sorted(counties):
-            msg = get_county_message(c, election, county)
+        clist = sorted(counties)
+        with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+            msgs = list(pool.map(lambda county: get_county_message(c, election, county), clist))
+        for county, msg in zip(clist, msgs):
             county_rep[county] = parse_reporting(msg)
             if msg:
                 county_rep[county]["county_url"] = msg.get("CountyUrl") or None

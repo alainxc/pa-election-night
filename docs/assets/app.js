@@ -61,7 +61,7 @@
       const est = Needle.estimateSeat({ mu: p.mu, sd: p.sd, fixed_prob: p.fixed_prob, dem_side: p.dem_side, ref_margin: p.ref_margin }, b, rows, extra);
       // damping: continue from the poller's displayed state when it exists
       const prev = prevDisplay[key] ? { mu: prevDisplay[key].display.mu, sd: prevDisplay[key].display.sd, p_dem: prevDisplay[key].display.p_dem, target_mu: prevDisplay[key].target.mu, swing_until: prevDisplay[key].display.swing_until } : null;
-      const disp = Needle.damp(prev, est, NOW());
+      const disp = est.fixed ? { mu: est.mu, sd: est.sd, p_dem: est.p_dem, target_mu: est.mu, swing_until: 0 } : Needle.damp(prev, est, NOW());
       const pd = p.dem_side === "DEM" ? disp.p_dem : 0.0;
       const pr = 1 - disp.p_dem;
       probs.push([pd, pr]);
@@ -223,7 +223,8 @@
       lo: cfg.holdover_dem, hi: cfg.holdover_dem + cfg.seats_up.length, mid: cfg.majority - 0.5,
       value: odds.dem_seats_mean, band: [odds.dem_seats_p05, odds.dem_seats_p95], marker: cfg.majority - 0.5, markerLabel: `${cfg.majority} = majority`,
       label: odds.dem_seats_mean.toFixed(1), sublabel: `est. Democratic seats (90%: ${odds.dem_seats_p05}–${odds.dem_seats_p95})`,
-      leftLabel: `Rep ${cfg.holdover_rep} hold over`, rightLabel: `Dem ${cfg.holdover_dem} hold over`, ticks: d3.range(cfg.holdover_dem, cfg.holdover_dem + cfg.seats_up.length + 1, 5),
+      leftLabel: cfg.holdover_rep ? `Rep ${cfg.holdover_rep} hold over` : "Rep", rightLabel: cfg.holdover_dem ? `Dem ${cfg.holdover_dem} hold over` : "Dem",
+      ticks: d3.range(cfg.holdover_dem, cfg.holdover_dem + cfg.seats_up.length + 1, cfg.seats_up.length > 50 ? 25 : 5),
       aria: "Chamber needle: estimated Democratic seats",
     });
     const o = document.getElementById("chamber-odds");
