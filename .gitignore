@@ -11,3 +11,4 @@ data/replay/snapshots/
 forecast-inputs/raw-returns/
 research/
 tests/_parity_fixture.json
+.claude/

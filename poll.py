@@ -30,7 +30,6 @@ import re
 import subprocess
 import sys
 import time
-import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -173,14 +172,19 @@ def rss_check(session, snapshot, office_name):
         if fid is None:
             return {"ok": None, "note": "no by-office feed listed"}
         xml = session.get(fr.BASE + f"electionFeed.aspx?ID={fid}", timeout=60).text
-        root = ET.fromstring(xml)
-        build = (root.findtext("./channel/lastBuildDate") or "").strip()
+        # the feed is not always well-formed XML (bare '&' in titles), so scan it
+        m = re.search(r"<lastBuildDate>(.*?)</lastBuildDate>", xml, re.S)
+        build = m.group(1).strip() if m else ""
         totals = {}
-        for item in root.iter("item"):
-            if (item.findtext("title") or "").strip() != office_name:
+        for item_xml in re.findall(r"<item>(.*?)</item>", xml, re.S):
+            t = re.search(r"<title>(.*?)</title>", item_xml, re.S)
+            if not t or t.group(1).strip() != office_name:
                 continue
+            d = re.search(r"<description>(.*?)</description>", item_xml, re.S)
+            desc = d.group(1) if d else ""
+            desc = re.sub(r"^\s*<!\[CDATA\[|\]\]>\s*$", "", desc.strip())
             p = _TableParser()
-            p.feed(item.findtext("description") or "")
+            p.feed(desc)
             for row in p.rows:
                 if len(row) < 7:
                     continue
@@ -202,6 +206,29 @@ def rss_check(session, snapshot, office_name):
                 "candidates_matched": len(diffs), "feed_built": build, "feed_id": fid}
     except Exception as e:  # noqa: BLE001
         return {"ok": None, "note": f"rss check failed: {e}"}
+
+
+def consistency_check(snapshot):
+    """County rows summed per seat vs the statewide per-seat totals in the same
+    snapshot (two different state endpoints). Overridden seats are skipped."""
+    by_seat = {}
+    for r in snapshot["rows"]:
+        if r.get("override"):
+            continue
+        for c in r["candidates"]:
+            k = (r["seat"], c["party"], c["candidate"].upper())
+            by_seat[k] = by_seat.get(k, 0) + (c["votes"] or 0)
+    diffs, seats_off = [], set()
+    for s in snapshot["seats"]:
+        for c in s["candidates"]:
+            k = (s["seat"], c["party"], c["candidate"].upper())
+            if k in by_seat and c["votes"] is not None:
+                d = abs(by_seat[k] - c["votes"])
+                diffs.append(d)
+                if d:
+                    seats_off.add(s["seat"])
+    return {"ok": (not seats_off) if diffs else None, "max_abs_diff": max(diffs) if diffs else None,
+            "seats_off": len(seats_off), "compared": len(diffs)}
 
 
 # ---------------------------------------------------------------------------
@@ -326,6 +353,13 @@ def run_cycle(a, client, cycle_no, replay_file=None):
             rss = rss_check(client.s, snap, snap["meta"]["office"]["OfficeName"])
             if rss.get("ok") is False:
                 logging.warning("RSS check: statewide totals differ, max diff %s", rss.get("max_abs_diff"))
+        # internal consistency: county rows (GetCountyBreak) must sum to the
+        # statewide contest totals (GetOfficeDetails); a mismatch means the
+        # state's two endpoints were mid-update when we read them
+        cons = consistency_check(snap)
+        if cons["ok"] is False:
+            logging.warning("consistency: %d seats where county sums differ from statewide totals (max %s)",
+                            cons["seats_off"], cons["max_abs_diff"])
         est_path = os.path.join(DOCS_DATA, f"estimates{suffix}.json")
         prev = load_json(est_path, {})
         est = {
@@ -333,6 +367,7 @@ def run_cycle(a, client, cycle_no, replay_file=None):
             "election": snap["meta"]["election"], "statewide_reporting": snap["meta"]["statewide_reporting"],
             "source_last_updated_local": snap["meta"]["source_last_updated_local"],
             "overrides": applied, "rss_check": rss if rss is not None else prev.get("rss_check"),
+            "consistency_check": cons,
             "mail_file": bool(mail), "chamber_odds": odds, "seats": seats_out,
             "replay": bool(replay_file),
         }

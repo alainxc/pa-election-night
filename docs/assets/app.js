@@ -11,7 +11,7 @@
   const seatParam = (params.get("seat") || "").toUpperCase();
   const chamber = page === "seat" ? (seatParam.startsWith("H") ? "house" : "senate") : (document.body.dataset.chamber || "senate");
   const suffix = chamber === "house" ? "_house" : "";
-  const TARGET = 2026;
+  let TARGET = 2026;  // which priors/baseline year; the poller's estimates.json can switch it (2024 replay)
   const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
   const fmt = {
     pct: (x, d = 0) => (x === null || x === undefined || Number.isNaN(x)) ? "—" : (100 * x).toFixed(d) + "%",
@@ -30,6 +30,7 @@
     return r.json();
   }
   async function loadStatic() {
+    try { const e = await getJSON(`data/estimates${suffix}.json`, true); if (e && e.target) TARGET = e.target; } catch (err) { /* keep default */ }
     const [priors, baseline] = await Promise.all([getJSON(`data/priors_${TARGET}.json`), getJSON(`data/baseline_${TARGET}.json`)]);
     let mail = null;
     try { mail = await getJSON(`data/mail_${TARGET}.json`, true); } catch (e) { mail = null; }
@@ -201,10 +202,16 @@
     if (disp.swing_until && disp.swing_until > NOW()) { const sw = document.createElement("span"); sw.className = "pill swing"; sw.style.marginLeft = "4px"; sw.textContent = "early returns, expect swings"; wrap.appendChild(sw); }
     return wrap;
   }
-  function candLabel(p) {
+  function shortName(n) {
+    // on phones show the surname only (drop suffixes and a parenthetical party note)
+    const base = n.replace(/\s*\(.*?\)\s*/g, " ").trim().split(/\s+/).filter(w => !/^(jr\.?|sr\.?|ii|iii|iv)$/i.test(w));
+    return base.length ? base[base.length - 1] : n;
+  }
+  function candLabel(p, short) {
     const parts = [];
-    if (p.dem_cand) parts.push(`<span class="dem">${p.dem_cand}</span>`);
-    if (p.rep_cand) parts.push(`<span class="rep">${p.rep_cand}</span>`);
+    const f = short ? shortName : (x => x);
+    if (p.dem_cand) parts.push(`<span class="dem">${f(p.dem_cand)}</span>`);
+    if (p.rep_cand) parts.push(`<span class="rep">${f(p.rep_cand)}</span>`);
     if (!p.dem_cand && !p.rep_cand) parts.push("—");
     return parts.join(" vs ");
   }
@@ -240,7 +247,7 @@
     const rows = Object.values(seats).map(s => {
       const p = s.prior, est = s.est, d = s.disp;
       return {
-        key: s.key, seatNo: p.district, cands: candLabel(p), p: p.dem_side === "DEM" ? d.p_dem : d.p_dem, fixed: est.fixed,
+        key: s.key, seatNo: p.district, cands: candLabel(p, window.innerWidth < 700), p: d.p_dem, fixed: est.fixed,
         mu: est.any_report || est.fixed ? d.mu : p.mu, lo: est.lo, hi: est.hi, frac: est.frac, status: est.status, prior: p.mu, rating: p.forecast_rating,
         holder: p.holder_party, est, disp: d, priorObj: p, anyReport: est.any_report, demSide: p.dem_side, override: s.override,
       };
