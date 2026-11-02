@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+poll.pid
+logs/
+data/history/
+data/raw*/
+data/state.json
+data/replay/snapshots/
+forecast-inputs/raw-returns/
+research/
+tests/_parity_fixture.json

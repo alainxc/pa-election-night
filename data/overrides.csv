@@ -1,0 +1,2 @@
+seat,county,dem_votes,rep_votes,other_votes,dem_ed,dem_mail,dem_prov,rep_ed,rep_mail,rep_prov,precincts_reporting,precincts_total,note
+# example (delete the # to activate): S46,WASHINGTON,41000,52000,900,,,,,,,180,183,typed from county site 10:40 pm

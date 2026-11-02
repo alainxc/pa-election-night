@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seat detail: PA Election Night</title>
+<meta name="description" content="County-by-county expected versus counted vote, by method, for one Pennsylvania legislative seat on election night 2026.">
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+</head>
+<body data-page="seat">
+<header class="top">
+  <a class="brand" href="index.html">PA Legislature: Election Night</a>
+  <nav><a href="index.html" id="nav-senate">Senate</a><a href="house.html" id="nav-house">House</a><a href="methods.html">Methods</a></nav>
+</header>
+<main>
+  <h1 id="title">Seat</h1>
+  <p class="sub" id="subtitle"></p>
+  <div class="status">
+    <span><span class="dot" id="dot"></span><span id="updated">loading…</span></span>
+    <span id="precincts"></span>
+  </div>
+  <div class="banner hidden" id="banner"></div>
+
+  <div class="grid two">
+    <div class="card needle-wrap">
+      <div id="seat-needle"></div>
+      <div class="odds" id="seat-odds"></div>
+      <p class="small" id="seat-note"></p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Estimate through the night</h3>
+      <div id="seat-timeline"></div>
+      <p class="small">Displayed estimate of the final margin (line) with the tracker's 90 percent range (band), and share of expected vote counted (grey, right axis).</p>
+    </div>
+  </div>
+
+  <h2>Candidates</h2>
+  <div class="tablewrap"><table id="cands"><thead><tr><th>Candidate</th><th>Party</th><th class="num">Votes</th><th class="num">Share</th><th class="num hide-sm">Election Day</th><th class="num hide-sm">Mail</th><th class="num hide-sm">Provisional</th></tr></thead><tbody></tbody></table></div>
+
+  <h2>Counties: expected vs counted, by method</h2>
+  <p class="sub">Expected votes come from the 2024 presidential vote in this district's part of each county, split by method using that county's 2024 mix and scaled to a midterm using 2022. Once a county's precincts are all in, its in-person total resets the expectation. Striped bars are expected; solid bars are counted.</p>
+  <div class="legend"><span><i style="background:var(--dem)"></i>Dem side counted</span><span><i style="background:var(--rep)"></i>Rep counted</span><span><i class="exp" style="border:1px solid var(--muted)"></i>expected total</span></div>
+  <div class="tablewrap"><table id="counties"><thead><tr>
+    <th>County</th><th>Method</th><th class="num">Expected</th><th class="num">Counted</th><th class="num">Dem</th><th class="num">Rep</th><th class="num">Dem share</th><th class="num hide-sm">2024 bench</th><th class="num hide-sm">Swing</th><th style="min-width:120px">Progress</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="small" id="county-note"></p>
+
+  <h2>Diagnostics</h2>
+  <div class="tablewrap"><table id="diag"><tbody></tbody></table></div>
+</main>
+<footer>Data: Pennsylvania Department of State unofficial returns (electionreturns.pa.gov). Estimates by the model on the <a href="methods.html">Methods</a> page. Not an official call.</footer>
+<script src="assets/needle.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

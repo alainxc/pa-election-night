@@ -1,0 +1,685 @@
+year,chamber,district,dem_votes,rep_votes,other_votes,total_votes,dem_cand,rep_cand,winner_party,winner_name,uncontested,n_candidates,incumbent_party_pre,map,source,incumbent_name_pre,incumbent_status,winner_ballot_party
+2020,house,1,17897,0,0,17897,Patrick J Harkins,,D,Patrick J Harkins,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Pat Harkins,Re-Elected,D
+2020,house,2,22322,0,0,22322,Robert E Merski,,D,Robert E Merski,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Robert Merski,Re-elected,D
+2020,house,3,22198,13967,0,36165,Ryan A Bizzarro,Greg S Hayes,D,Ryan A Bizzarro,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Ryan Bizzarro,Re-Elected,D
+2020,house,4,0,26746,0,26746,,Curtis G. Sonney,R,Curtis G. Sonney,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Curt Sonney,Re-Elected,R
+2020,house,5,10080,23256,0,33336,Graham S. Gonzales,Barry J Jozwiak,R,Barry J Jozwiak,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Barry Jozwiak,Re-Elected,R
+2020,house,6,11282,21278,0,32560,Matthew Ferrence,Bradley T Roae,R,Bradley T Roae,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Brad Roae,Re-elected,R
+2020,house,7,0,0,28282,28282,,,D,Mark Longietti,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mark Longietti,Re-Elected,D/R
+2020,house,8,7873,23824,0,31697,Phillip C Heasley,Timothy R. Bonner,R,Timothy R. Bonner,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Tim Bonner,Re-Elected,R
+2020,house,9,15177,12025,2940,30142,Christopher Sainato,Carol Lynne Ryan,D,Christopher Sainato,False,3,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Chris Sainato,Re-Elected,D
+2020,house,10,10027,15004,4098,29129,Kolbe Cole,Aaron Joseph Bernstine,R,Aaron Joseph Bernstine,False,3,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Aaron Bernstine,Re-elected,R
+2020,house,11,9029,22932,0,31961,Samuel Joseph Doctor,Marci Mustello,R,Marci Mustello,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Marci Mustello,Re-elected,R
+2020,house,12,16683,26836,0,43519,Daniel B Smith Jr,Daryl D Metcalfe,R,Daryl D Metcalfe,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Daryl Metcalfe,Re-elected,R
+2020,house,13,14065,20216,0,34281,Richard Raymond Ruggieri Iii,John Adda Lawrence,R,John Adda Lawrence,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),John Lawrence,Re-elected,R
+2020,house,14,10869,24938,0,35807,Zachary James Wilson,James E. Marshall,R,James E. Marshall,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jim E. Marshall,Re-elected,R
+2020,house,15,10098,24550,0,34648,Robert T Williams Sr,Joshua Daniel Kail,R,Joshua Daniel Kail,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Josh Kail,Re-elected,R
+2020,house,16,19093,14884,0,33977,Robert F Matzie,Rico T. Elmore,D,Robert F Matzie,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Robert Matzie,Re-elected,D
+2020,house,17,0,26557,0,26557,,Parke H. Wentling,R,Parke H. Wentling,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Parke Wentling,Re-elected,R
+2020,house,18,15188,16687,0,31875,Harold M Hayes,Kathleen C Tomlinson,R,Kathleen C Tomlinson,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),K.C. Tomlinson,Re-elected,R
+2020,house,19,22679,0,0,22679,Jake Wheatley,,D,Jake Wheatley,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jake Wheatley,Re-elected,D
+2020,house,20,27657,0,0,27657,Emily Deborah Kinkead,,D,Emily Deborah Kinkead,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Adam Ravenstahl,Defeated in Primary,D
+2020,house,21,24035,12170,0,36205,Sara Innamorato,John Franklin Waugh,D,Sara Innamorato,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Sara Innamorato,Re-elected,D
+2020,house,22,13931,0,0,13931,Peter Schweyer,,D,Peter Schweyer,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Peter Schweyer,Re-elected,D
+2020,house,23,24642,0,4197,28839,Dan B Frankel,,D,Dan B Frankel,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Frankel,Re-elected,D
+2020,house,24,29894,0,0,29894,Edward C Gainey,,D,Edward C Gainey,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Ed Gainey,Re-elected,D
+2020,house,25,19445,13896,0,33341,Brandon Markosek,John D Ritter,D,Brandon Markosek,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Brandon Markosek,Re-elected,D
+2020,house,26,17145,19727,0,36872,Paul F Friel Jr,Timothy F. Hennessey,R,Timothy F. Hennessey,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Tim Hennessey,Re-elected,R
+2020,house,27,26094,0,0,26094,Daniel Deasy,,D,Daniel Deasy,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Deasy,Re-elected,D
+2020,house,28,20477,23770,0,44247,Emily Skopov,Robert W Mercuri,R,Robert W Mercuri,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Turzai,Resigned,R
+2020,house,29,18439,23191,352,41982,Marlene Katz,Meghan Schroeder,R,Meghan Schroeder,False,3,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Meghan Schroeder,Re-elected,R
+2020,house,30,19217,23309,0,42526,Melissa Geiger Shulman,Lori A Mizgorski,R,Lori A Mizgorski,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Lori Mizgorski,Re-elected,R
+2020,house,31,26221,17710,0,43931,Perry Warren,Charles S. Adcock,D,Perry Warren,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Perry Warren,Re-elected,D
+2020,house,32,30311,0,0,30311,Anthony Deluca,,D,Anthony Deluca,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Anthony M. DeLuca,Re-elected,D
+2020,house,33,15471,16359,0,31830,Francis J. Dermody,Carrie L. Delrosso,R,Carrie L. Delrosso,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Frank Dermody,Defeated,R
+2020,house,34,27112,0,0,27112,Summer Lee,,D,Summer Lee,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Summer Lee,Re-elected,D
+2020,house,35,21327,0,0,21327,Austin A Davis,,D,Austin A Davis,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Austin Davis,Re-elected,D
+2020,house,36,20064,11980,0,32044,Jessica Lynn Benham,Adrian Matthew Doyle,D,Jessica Lynn Benham,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Harry Readshaw,Retired,D
+2020,house,37,9559,25749,0,35308,John J Padora Jr.,Melinda S Fee,R,Melinda S Fee,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mindy Fee,Re-elected,R
+2020,house,38,20352,15930,0,36282,Nickolas R Pisciottano,Linda J Book,D,Nickolas R Pisciottano,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),William C. Kortz,Retired,D
+2020,house,39,13657,23072,0,36729,Sara-Summer Oliphant,Michael James Puskaric,R,Michael James Puskaric,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Puskaric,Re-elected,R
+2020,house,40,16968,26444,0,43412,Sharon Guidi,Natalie Nicole Mihalek Stuck,R,Natalie Nicole Mihalek Stuck,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Natalie Mihalek,Re-elected,R
+2020,house,41,16880,23185,0,40065,Michele Wherley,Brett R Miller,R,Brett R Miller,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Brett Miller,Re-elected,R
+2020,house,42,25552,11762,0,37314,Daniel Miller,Kurt P Korinko Jr,D,Daniel Miller,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Miller,Re-elected,D
+2020,house,43,0,27275,0,27275,,Keith James Greiner,R,Keith James Greiner,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Keith Greiner,Re-elected,R
+2020,house,44,18126,22106,0,40232,Michele Knoll,Valerie Gaydos,R,Valerie Gaydos,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Valerie Gaydos,Re-elected,R
+2020,house,45,22833,14165,0,36998,Anita A Kulik,Daniel Brian Devito,D,Anita A Kulik,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Anita Astorino Kulik,Re-elected,D
+2020,house,46,15204,25250,0,40454,Byron F Timmins,Jason A Ortitay,R,Jason A Ortitay,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jason Ortitay,Re-elected,R
+2020,house,47,11663,22043,0,33706,Donald Alfred Owens,Keith J. Gillespie,R,Keith J. Gillespie,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Keith J. Gillespie,Re-elected,R
+2020,house,48,14635,20559,0,35194,Harlan G. Shober Jr.,Timothy Jon O'Neal,R,Timothy Jon O'Neal,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Tim O'Neal,Re-elected,R
+2020,house,49,10275,17918,0,28193,Randy J Barli,Donald Cook,R,Donald Cook,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Bud Cook,Re-elected,R
+2020,house,50,14581,12794,0,27375,Pam Snyder,Larry W Yost Ii,D,Pam Snyder,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Pam Snyder,Re-elected,D
+2020,house,51,8942,19584,0,28526,Kevin D Jones,Matthew David Dowling,R,Matthew David Dowling,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Matt Dowling,Re-elected,R
+2020,house,52,8911,21210,0,30121,Harry Young Cochran,Ryan James Warner,R,Ryan James Warner,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Ryan Warner,Re-elected,R
+2020,house,53,19949,16678,0,36627,Steven R Malagari,Allan Miles Arnott,D,Steven R Malagari,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Steve Malagari,Re-elected,D
+2020,house,54,0,30360,0,30360,,Robert J. Brooks,R,Robert J. Brooks,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Robert Brooks,Re-elected,R
+2020,house,55,14869,16304,0,31173,Joseph A Petrarca,Jason Roy Silvis,R,Jason Roy Silvis,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Joseph Petrarca Jr.,Defeated,R
+2020,house,56,0,32830,0,32830,,George Dunbar,R,George Dunbar,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),George Dunbar,Re-elected,R
+2020,house,57,0,28725,0,28725,,Eric R Nelson,R,Eric R Nelson,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Eric Nelson,Re-elected,R
+2020,house,58,11947,20535,0,32482,Robert L Prah Jr,Eric M. Davanzo,R,Eric M. Davanzo,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Eric Davanzo,Re-elected,R
+2020,house,59,0,32756,0,32756,,Michael P. Reese,R,Michael P. Reese,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Reese,Re-elected,R
+2020,house,60,0,29873,0,29873,,Jeffrey P. Pyle,R,Jeffrey P. Pyle,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jeff Pyle,Re-elected,R
+2020,house,61,25033,16800,0,41833,Laura Elizabeth Frances Hanbidge,Florence L. Friebel,D,Laura Elizabeth Frances Hanbidge,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Liz Hanbidge,Re-elected,D
+2020,house,62,9205,19938,0,29143,Dennis R Semsick,James Bruno Struzzi Ii,R,James Bruno Struzzi Ii,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),James Struzzi,Re-elected,R
+2020,house,63,0,26466,0,26466,,Donna R. Oberlander,R,Donna R. Oberlander,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Donna Oberlander,Re-elected,R
+2020,house,64,0,22995,5584,28579,,R. Lee James,R,R. Lee James,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Lee James,Re-elected,R
+2020,house,65,0,25333,0,25333,,Kathy L. Rapp,R,Kathy L. Rapp,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Kathy Rapp,Re-elected,R
+2020,house,66,0,28085,0,28085,,Brian A Smith,R,Brian A Smith,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Cris Dush,Running for State Senate,R
+2020,house,67,0,27279,0,27279,,Martin T. Causer,R,Martin T. Causer,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Martin Causer,Re-elected,R
+2020,house,68,0,26038,3179,29217,,Clinton D. Owlett,R,Clinton D. Owlett,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Clint Owlett,Re-elected,R
+2020,house,69,0,31065,0,31065,,Carl Walker Metzgar,R,Carl Walker Metzgar,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Carl Walker Metzgar,Re-elected,R
+2020,house,70,21574,9634,0,31208,Matthew D Bradford,Daniel J Wissert,D,Matthew D Bradford,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Matthew Bradford,Re-elected,D
+2020,house,71,0,26678,0,26678,,James Patrick Rigby,R,James Patrick Rigby,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jim Rigby,Re-elected,R
+2020,house,72,16880,15147,0,32027,Frank Burns,Howard D. Terndrup,D,Frank Burns,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Frank Burns,Re-elected,D
+2020,house,73,0,26926,0,26926,,Thomas R Sankey Iii,R,Thomas R Sankey Iii,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Tommy Sankey,Re-elected,R
+2020,house,74,21712,12017,0,33729,Dan K Williams,Dale L. Hensel,D,Dan K Williams,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Dan K. Williams,Re-elected,D
+2020,house,75,7964,25548,0,33512,Ryan S Grimm,Michael J. Armanini,R,Michael J. Armanini,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Matt Gabler,Retired,R
+2020,house,76,10079,19156,0,29235,Joseph Waltz,Stephanie Paige Borowicz,R,Stephanie Paige Borowicz,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Stephanie Borowicz,Re-elected,R
+2020,house,77,14243,7399,0,21642,Harry Scott Conklin,Stephen T Yetsko,D,Harry Scott Conklin,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Scott Conklin,Re-elected,D
+2020,house,78,0,31530,0,31530,,Jesse W Topper,R,Jesse W Topper,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jesse Topper,Re-elected,R
+2020,house,79,8530,20089,0,28619,Jason Runk,Louis C. Schmitt Jr.,R,Louis C. Schmitt Jr.,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Louis Schmitt Jr.,Re-elected,R
+2020,house,80,0,30934,0,30934,,James V Gregory,R,James V Gregory,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jim Gregory,Re-elected,R
+2020,house,81,10600,23346,0,33946,Ian Michael Kidd,Richard S Irvin,R,Richard S Irvin,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Rich Irvin,Re-elected,R
+2020,house,82,0,26799,0,26799,,Johnathan D Hershey,R,Johnathan D Hershey,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),John D. Hershey,Re-elected,R
+2020,house,83,9231,19054,0,28285,Airneezer J Page,Jeff C Wheeland,R,Jeff C Wheeland,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jeff Wheeland,Re-elected,R
+2020,house,84,6958,25941,0,32899,Amanda R Waldman,Joseph D Hamm,R,Joseph D Hamm,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Garth Everett,Retired,R
+2020,house,85,9707,20765,0,30472,Kathleen M Evans,David Hummer Rowe,R,David Hummer Rowe,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),David H. Rowe,Re-elected,R
+2020,house,86,0,27328,0,27328,,Perry A Stambaugh,R,Perry A Stambaugh,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mark Keller,Retired,R
+2020,house,87,19075,24196,0,43271,Nicole C Miller,William Gregory Rothman,R,William Gregory Rothman,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Greg Rothman,Re-elected,R
+2020,house,88,15375,21302,0,36677,Tara Shakespeare,Sheryl M Delozier,R,Sheryl M Delozier,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Sheryl M. Delozier,Re-elected,R
+2020,house,89,0,28271,0,28271,,Robert W. Kauffman,R,Robert W. Kauffman,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Rob Kauffman,Re-elected,R
+2020,house,90,0,30048,0,30048,,Paul T Schemel,R,Paul T Schemel,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Paul Schemel,Re-elected,R
+2020,house,91,0,28932,0,28932,,Daniel P. Moul,R,Daniel P. Moul,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Moul,Re-elected,R
+2020,house,92,10515,27020,0,37535,Douglas F Ross,Dawn Keefer,R,Dawn Keefer,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Dawn Keefer,Re-elected,R
+2020,house,93,0,27807,0,27807,,Paul Michael Jones,R,Paul Michael Jones,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Paul M. Jones,Re-elected,R
+2020,house,94,0,26243,0,26243,,Stanley E. Saylor,R,Stanley E. Saylor,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Stan Saylor,Re-elected,R
+2020,house,95,14102,7943,0,22045,Carol Hill-Evans,Kathryn Correll French,D,Carol Hill-Evans,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Carol Hill-Evans,Re-elected,D
+2020,house,96,20850,0,0,20850,P Michael Sturla,,D,P Michael Sturla,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Sturla,Re-elected,D
+2020,house,97,18422,24300,0,42722,Dana Gulick,Steven Curtis Mentzer,R,Steven Curtis Mentzer,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Steven Mentzer,Re-elected,R
+2020,house,98,11201,22373,0,33574,William Nelson Troutman Jr,David S. Hickernell,R,David S. Hickernell,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),David Hickernell,Re-elected,R
+2020,house,99,7667,21144,0,28811,Richard Michael Hodge,David H. Zimmerman,R,David H. Zimmerman,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),David H. Zimmerman,Re-elected,R
+2020,house,100,0,24254,0,24254,,Bryan D Cutler,R,Bryan D Cutler,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Bryan Cutler,Re-elected,R
+2020,house,101,12792,21611,0,34403,Calvin Craig Clements,Francis X Ryan,R,Francis X Ryan,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Frank Ryan,Re-elected,R
+2020,house,102,9845,23197,0,33042,Matthew Duvall,Russ Diamond,R,Russ Diamond,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Russ Diamond,Re-elected,R
+2020,house,103,22384,0,0,22384,Patty H Kim,,D,Patty H Kim,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Patty Kim,Re-elected,D
+2020,house,104,16319,20684,0,37003,Patricia A Smith,Susan C. Helm,R,Susan C. Helm,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Sue Helm,Re-elected,R
+2020,house,105,19773,21263,0,41036,Brittney L Rodas,Andrew Lewis,R,Andrew Lewis,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Andrew Lewis,Re-elected,R
+2020,house,106,16631,19201,0,35832,Lindsay Drew,Thomas L Mehaffie Iii,R,Thomas L Mehaffie Iii,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Tom Mehaffie,Re-elected,R
+2020,house,107,0,23042,4948,27990,,Kurt A Masser,R,Kurt A Masser,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Kurt Masser,Re-elected,R
+2020,house,108,0,27352,0,27352,,Lynda J Schlegel Culver,R,Lynda J Schlegel Culver,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Lynda Schlegel-Culver,Re-elected,R
+2020,house,109,7323,19104,2449,28876,William T Monahan,David R. Millard,R,David R. Millard,False,3,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),David R. Millard,Re-elected,R
+2020,house,110,0,24848,3836,28684,,Tina Pickett,R,Tina Pickett,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Tina Pickett,Re-elected,R
+2020,house,111,0,26442,0,26442,,Jonathan A Fritz,R,Jonathan A Fritz,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jonathan Fritz,Re-elected,R
+2020,house,112,21245,11329,0,32574,Kyle Mullins,Mary Alice Noldy,D,Kyle Mullins,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Kyle Mullins,Re-elected,D
+2020,house,113,20273,9363,0,29636,Marty Flynn,William John Kresge,D,Marty Flynn,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Marty Flynn,Re-elected,D
+2020,house,114,19860,17003,0,36863,Bridget Kosierowski,James E May Iv,D,Bridget Kosierowski,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Bridget Malloy Kosierowski,Re-elected,D
+2020,house,115,17525,9901,0,27426,Maureen Madden,Dulce Maria Ridder,D,Maureen Madden,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Maureen Madden,Re-elected,D
+2020,house,116,7338,19167,0,26505,Todd A. Eachus,Tarah C. Toohil,R,Tarah C. Toohil,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Tarah Toohil,Re-elected,R
+2020,house,117,0,28947,0,28947,,Karen Boback,R,Karen Boback,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Karen Boback,Re-elected,R
+2020,house,118,18745,16273,0,35018,Michael B Carroll,Andrew Michael Holter,D,Michael B Carroll,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Michael B. Carroll,Re-elected,D
+2020,house,119,14961,13500,0,28461,Gerald J Mullery,John W. Chura,D,Gerald J Mullery,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Gerald Mullery,Re-elected,D
+2020,house,120,11934,20428,0,32362,Joanna Bryn Smith,Aaron D. Kaufer,R,Aaron D. Kaufer,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Aaron Kaufer,Re-elected,R
+2020,house,121,18764,0,0,18764,Edwin Pashinski,,D,Edwin Pashinski,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Eddie Day Pashinski,Re-elected,D
+2020,house,122,0,0,28339,28339,,Doyle Heffley,R,Doyle Heffley,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Doyle Heffley,Re-elected,D/R
+2020,house,123,8998,15079,0,24077,Peter James Symons Jr.,Timothy F Twardzik,R,Timothy F Twardzik,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Neal Goodman,Retired,R
+2020,house,124,8942,23041,0,31983,Taylor Evan Picone,Jerome P Knowles,R,Jerome P Knowles,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jerry Knowles,Re-elected,R
+2020,house,125,0,28041,0,28041,,Joseph P Kerwin,R,Joseph P Kerwin,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Tobash,Retired,R
+2020,house,126,18483,8950,0,27433,Mark L Rozzi,James Daniel Oswald,D,Mark L Rozzi,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mark Rozzi,Re-elected,D
+2020,house,127,11763,4367,0,16130,Manuel Guzman Jr,Vincent D Gagliardo Jr,D,Manuel Guzman Jr,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Thomas Caltagirone,Retired,D
+2020,house,128,0,30266,0,30266,,Mark M Gillen,R,Mark M Gillen,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mark M. Gillen,Re-elected,R
+2020,house,129,15651,21037,0,36688,Kelly Mcdonough,James A. Cox Jr.,R,James A. Cox Jr.,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jim Cox,Re-elected,R
+2020,house,130,13297,23477,0,36774,Francis Lamar Foley Jr,David M. Maloney Sr.,R,David M. Maloney Sr.,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),David Maloney,Re-elected,R
+2020,house,131,18920,22438,0,41358,Kevin Branco,V Milou Mackenzie,R,V Milou Mackenzie,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Justin Simmons,Retired,R
+2020,house,132,16992,8029,0,25021,Michael Schlossberg,Michael L Mccreary,D,Michael Schlossberg,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Schlossberg,Re-elected,D
+2020,house,133,18820,12212,0,31032,Jeanne Mcneill,David Molony,D,Jeanne Mcneill,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jeanne McNeill,Re-elected,D
+2020,house,134,15580,23485,0,39065,Marc I Basist,Ryan Mackenzie,R,Ryan Mackenzie,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Ryan Mackenzie,Re-elected,R
+2020,house,135,19855,10410,0,30265,Stephen P Samuelson,Scott J Hough,D,Stephen P Samuelson,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Steve Samuelson,Re-elected,D
+2020,house,136,21389,0,0,21389,Robert Freeman,,D,Robert Freeman,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Robert L. Freeman,Re-elected,D
+2020,house,137,13795,23807,0,37602,Katelind A Brennan,Joseph T Emrick,R,Joseph T Emrick,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Emrick,Re-elected,R
+2020,house,138,18355,23518,0,41873,Tara M Zrinski,Ann L Flood,R,Ann L Flood,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Marcia Hahn,Retired,R
+2020,house,139,11330,24555,0,35885,Marian S Keegan,Michael Peifer,R,Michael Peifer,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Michael Peifer,Re-elected,R
+2020,house,140,19822,13217,0,33039,John T Galloway,Jeanine Mary Mcgee,D,John T Galloway,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),John Galloway,Re-elected,D
+2020,house,141,19348,11522,0,30870,Tina Davis,Kelly A Bellerby-Allen,D,Tina Davis,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Tina Davis,Re-elected,D
+2020,house,142,16419,25894,0,42313,Malinda Lauren Lareau,Frank A Farry Iii,R,Frank A Farry Iii,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Frank Farry,Re-elected,R
+2020,house,143,21172,22517,0,43689,Wendy Ullman,Shelby E. Labs,R,Shelby E. Labs,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Wendy Ullman,Defeated,R
+2020,house,144,18342,22881,0,41223,Gary P Spillane,F. Todd Polinchock,R,F. Todd Polinchock,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Todd Polinchock,Re-elected,R
+2020,house,145,15172,22461,0,37633,Robyn Colajezzi,Craig T Staats,R,Craig T Staats,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Craig Staats,Re-elected,R
+2020,house,146,20681,15706,0,36387,Joseph P Ciresi,Thomas J Neafcy Jr,D,Joseph P Ciresi,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Ciresi,Re-elected,D
+2020,house,147,16494,21361,1200,39055,Jill A Dennin,Tracy Elizabeth Pennycuick,R,Tracy Elizabeth Pennycuick,False,3,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Marcy Toepel,Retired,R
+2020,house,148,31506,13463,0,44969,Mary Josephine Daley,Allen Arthur Anderson,D,Mary Josephine Daley,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mary Jo Daley,Re-elected,D
+2020,house,149,28650,12248,0,40898,Tim Briggs,William Andrew Michael,D,Tim Briggs,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Tim Briggs,Re-elected,D
+2020,house,150,20538,17189,0,37727,Joseph Webster,Beth Ann Mazza,D,Joseph Webster,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Webster,Re-elected,D
+2020,house,151,18566,21020,0,39586,Jonathan Kassa,William Todd Stephens,R,William Todd Stephens,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Todd Stephens,Re-elected,R
+2020,house,152,20183,16672,2732,39587,Nancy Guenst,Karen M. Houck,D,Nancy Guenst,False,3,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Tom Murt,Retired,D
+2020,house,153,30393,0,9075,39468,Benjamin V Sanchez,,D,Benjamin V Sanchez,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Ben Sanchez,Re-elected,D
+2020,house,154,30566,8760,0,39326,Napoleon J Nelson Sr,Kathleen Bowers,D,Napoleon J Nelson Sr,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Steve McCarter,Retired,D
+2020,house,155,25107,19724,0,44831,Danielle Friel Otten,Michael Thomas Taylor,D,Danielle Friel Otten,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Danielle Friel Otten,Re-elected,D
+2020,house,156,21914,17679,0,39593,Dianne Herrin,Leonard J. Iacono,D,Dianne Herrin,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Carolyn Comitta,Ran for State Senate,D
+2020,house,157,25185,15109,0,40294,Melissa L Shusterman,Bryan D Walters,D,Melissa L Shusterman,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Melissa Shusterman,Re-elected,D
+2020,house,158,19294,18776,0,38070,Christina Sappey,Eric Mark Roe,D,Christina Sappey,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Christina Sappey,Re-elected,D
+2020,house,159,17558,6972,0,24530,Brian Kirkland,Ruth Moton,D,Brian Kirkland,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Brian Joseph Kirkland,Re-elected,D
+2020,house,160,19788,20395,0,40183,Anton N Andrew,Wendell Craig Williams,R,Wendell Craig Williams,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Stephen Barrar,Retired,R
+2020,house,161,22764,17169,0,39933,Leanne Krueger,Ralph F. Shicatano Jr.,D,Leanne Krueger,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Leanne Krueger,Re-elected,D
+2020,house,162,18693,15731,0,34424,David M Delloso,Peter Thomas Gaglio Jr,D,David M Delloso,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),David Delloso,Re-elected,D
+2020,house,163,22259,14680,0,36939,Michael P Zabel,Michael Mccollum,D,Michael P Zabel,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Michael Zabel,Re-elected,D
+2020,house,164,24398,0,0,24398,Margo L Davidson,,D,Margo L Davidson,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Margo L. Davidson,Re-elected,D
+2020,house,165,21529,20222,0,41751,Jennifer O'Mara,Robert F. Smythe Jr.,D,Jennifer O'Mara,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jennifer O'Mara,Re-elected,D
+2020,house,166,28791,11826,0,40617,Greg Vitali,Christine E Boyle,D,Greg Vitali,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Greg Vitali,Re-elected,D
+2020,house,167,24214,19156,0,43370,Kristine C Howard,Wendy Graham Leland,D,Kristine C Howard,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Kristine Howard,Re-elected,D
+2020,house,168,21526,22399,0,43925,Debra A Ciamacca,Christopher B Quinn,R,Christopher B Quinn,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Christopher B. Quinn,Re-elected,R
+2020,house,169,0,29927,0,29927,,Kate Anne Klunk,R,Kate Anne Klunk,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Kate Klunk,Re-elected,R
+2020,house,170,11577,17672,0,29249,Michael F Doyle Jr,Martina A White,R,Martina A White,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Martina White,Re-elected,R
+2020,house,171,15283,24305,0,39588,Peter Dawson Buckland,Kerry A Benninghoff,R,Kerry A Benninghoff,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Kerry Benninghoff,Re-elected,R
+2020,house,172,16415,10416,0,26831,Kevin J Boyle,Haroon Bashir,D,Kevin J Boyle,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Kevin J. Boyle,Re-elected,D
+2020,house,173,17595,0,0,17595,Michael Driscoll,,D,Michael Driscoll,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Michael Driscoll,Re-elected,D
+2020,house,174,18313,0,0,18313,Ed Neilson,,D,Ed Neilson,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Ed Neilson,Re-elected,D
+2020,house,175,30213,0,0,30213,Marylouise Isaacson,,D,Marylouise Isaacson,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mary Isaacson,Re-elected,D
+2020,house,176,14385,17683,0,32068,Claudette Williams,Jack B Rader Jr,R,Jack B Rader Jr,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jack Rader,Re-elected,R
+2020,house,177,15629,10457,0,26086,Joe Hohenstein,John Arthur Nungesser,D,Joe Hohenstein,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Joseph C. Hohenstein,Re-elected,D
+2020,house,178,19879,24749,0,44628,Ann Marie Mitchell,Wendi Thomas,R,Wendi Thomas,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Wendi Thomas,Re-elected,R
+2020,house,179,18943,0,0,18943,Jason T Dawkins,,D,Jason T Dawkins,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jason Dawkins,Re-elected,D
+2020,house,180,13551,0,0,13551,Angel L Cruz,,D,Angel L Cruz,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Angel Cruz,Re-elected,D
+2020,house,181,25237,0,0,25237,Malcolm Kenyatta,,D,Malcolm Kenyatta,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Malcolm Kenyatta,Re-elected,D
+2020,house,182,34191,6962,0,41153,Brian K Sims,Andrew I Murray,D,Brian K Sims,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Brian Sims,Re-elected,D
+2020,house,183,14204,22270,0,36474,Jason Ruff,Zachary Allen Mako,R,Zachary Allen Mako,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Zach Mako,Re-elected,R
+2020,house,184,20236,8234,0,28470,Elizabeth Fiedler,Louis T. Menna Iv,D,Elizabeth Fiedler,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Elizabeth Fiedler,Re-elected,D
+2020,house,185,23813,0,0,23813,Regina Genell Young,,D,Regina Genell Young,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Maria Donatucci,Lost Primary,D
+2020,house,186,31013,0,0,31013,Jordan Alexander Harris,,D,Jordan Alexander Harris,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jordan A. Harris,Re-elected,D
+2020,house,187,14561,23289,0,37850,Michael E Blichar Jr,Gary Day,R,Gary Day,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Gary Day,Re-elected,R
+2020,house,188,25256,0,0,25256,Rick Chester Krajewski,,D,Rick Chester Krajewski,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),James R. Roebuck Jr.,Lost Primary,D
+2020,house,189,12458,18355,0,30813,Adam A Rodriguez,Rosemary Maula Brown,R,Rosemary Maula Brown,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Rosemary Brown,Re-elected,R
+2020,house,190,27861,1553,0,29414,Amen Brown,Wanda Logan,D,Amen Brown,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),G. Roni Green,Defeated in primary,D
+2020,house,191,25065,0,0,25065,Joanna Mcclinton,,D,Joanna Mcclinton,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Joanna E. McClinton,Re-elected,D
+2020,house,192,29185,0,0,29185,Morgan B Cephas,,D,Morgan B Cephas,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Morgan Cephas,Re-elected,D
+2020,house,193,0,28519,0,28519,,Torren C. Ecker,R,Torren C. Ecker,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Torren Ecker,Re-elected,R
+2020,house,194,27937,8720,957,37614,Pamela A Delissio,Lisa Goldman Riley,D,Pamela A Delissio,False,3,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Pamela DeLissio,Re-elected,D
+2020,house,195,30008,0,0,30008,Donna Bullock,,D,Donna Bullock,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Donna Bullock,Re-elected,D
+2020,house,196,0,28797,0,28797,,Seth Michael Grove,R,Seth Michael Grove,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Seth Grove,Re-elected,R
+2020,house,197,18879,0,0,18879,Danilo R. Burgos,,D,Danilo R. Burgos,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Danilo Burgos,Re-elected,D
+2020,house,198,25453,0,0,25453,Darisha K Parker,,D,Darisha K Parker,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Rosita Youngblood,Retired,D
+2020,house,199,12399,21654,0,34053,Janelle Kayla Crossley,Barbara J Gleim,R,Barbara J Gleim,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Barbara Gleim,Re-elected,R
+2020,house,200,36421,0,0,36421,Chris Rabb,,D,Chris Rabb,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Chris Rabb,Re-elected,D
+2020,house,201,26642,0,0,26642,Stephen Kinsey,,D,Stephen Kinsey,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Stephen Kinsey,Re-elected,D
+2020,house,202,18102,0,0,18102,Jared Solomon,,D,Jared Solomon,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jared Solomon,Re-elected,D
+2020,house,203,27107,0,0,27107,Isabella Fitzgerald,,D,Isabella Fitzgerald,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Isabella Fitzgerald,Re-elected,D
+2020,senate,1,124416,0,0,124416,Nikil Saval,,D,Nikil Saval,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Larry Farnese,Lost in primary,D
+2020,senate,3,90252,0,0,90252,Sharif T Street,,D,Sharif T Street,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Sharif Street,Unopposed,D
+2020,senate,5,69457,0,0,69457,John P. Sabatina Jr.,,D,John P. Sabatina Jr.,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),John Sabatina,Unopposed,D
+2020,senate,7,115651,0,0,115651,Vincent J Hughes,,D,Vincent J Hughes,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Vincent Hughes,Unopposed,D
+2020,senate,9,80150,74114,0,154264,John I Kane,Thomas H. Killion,D,John I Kane,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Tom Killion,Defeated,D
+2020,senate,11,66605,47529,0,114134,Judith L Schwank,Annette C Baker,D,Judith L Schwank,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Judy Schwank,Re-elected,D
+2020,senate,13,58419,73204,0,131623,Janet Temin,Scott F Martin,R,Scott F Martin,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Scott Martin,Re-elected,R
+2020,senate,15,66445,70957,0,137402,George B Scott,Giovanni M Disanto,R,Giovanni M Disanto,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),John DiSanto,Re-elected,R
+2020,senate,17,105719,54675,0,160394,Amanda M Cappelletti,Ellen Fisher,D,Amanda M Cappelletti,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Daylin Leach,Lost in primary,D
+2020,senate,19,88854,65696,0,154550,Carolyn Comitta,Kevin T Runey,D,Carolyn Comitta,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Andy Dinniman,Retired,D
+2020,senate,21,40513,98493,0,139006,Shelbie Lynn Stromyer,Scott E Hutchinson,R,Scott E Hutchinson,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Scott Hutchinson,Re-elected,R
+2020,senate,23,32080,86979,0,119059,Jaclyn E Baker,Emerson Eugene Yaw,R,Emerson Eugene Yaw,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Eugene Yaw,Re-elected,R
+2020,senate,25,30570,88928,0,119498,Margaret Satterwhite Brown,Cris Dush,R,Cris Dush,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Scarnati,Retired,R
+2020,senate,27,31979,83610,0,115589,Michelle Lynn Siegel,John R Gordner,R,John R Gordner,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),John Gordner,Re-elected,R
+2020,senate,29,0,106013,0,106013,,David G Argall,R,David G Argall,True,1,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Dave Argall,Unopposed,R
+2020,senate,31,62023,95084,0,157107,Shanna Danielson,Michael Regan,R,Michael Regan,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Regan,Re-elected,R
+2020,senate,33,43867,96029,0,139896,Richard L Sterner,Douglas Vincent Mastriano,R,Douglas Vincent Mastriano,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Doug Mastriano,Re-elected,R
+2020,senate,35,32768,91578,0,124346,Shaun A Dougherty,Wayne Langerholc Jr.,R,Wayne Langerholc Jr.,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Wayne Langerholc,Re-elected,R
+2020,senate,37,84494,91909,0,176403,Pamela M Iovino,Devlin Robinson,R,Devlin Robinson,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Pam Iovino,Defeated,R
+2020,senate,39,44820,93606,0,138426,Tay R. Waltenbaugh,Kim Ward,R,Kim Ward,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Kim Ward,Re-elected,R
+2020,senate,41,34551,92457,0,127008,Anthony J Deloreto,Joe Pittman,R,Joe Pittman,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Pittman,Re-elected,R
+2020,senate,43,117770,0,0,117770,Jay Costa Jr,,D,Jay Costa Jr,True,1,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jay Costa,Unopposed,D
+2020,senate,45,66198,66125,0,132323,James R Brewster,Nicole W. Ziccarelli,D,James R Brewster,False,2,D,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Jim Brewster,Re-elected,D
+2020,senate,47,44575,88375,0,132950,Stephen John Krizan Iii,Elder A Vogel Jr,R,Elder A Vogel Jr,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Elder Vogel,Re-elected,R
+2020,senate,49,46867,69743,0,116610,Julie L Slomski,Daniel J Laughlin,R,Daniel J Laughlin,False,2,R,2011_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Laughlin,Re-elected,R
+2022,house,1,13327,0,3394,16721,Patrick J Harkins,,D,Patrick J Harkins,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Pat Harkins,Re-elected,D
+2022,house,2,16242,9068,0,25310,Robert E. Merski,Michael P Pace,D,Robert E. Merski,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Robert Merski,Re-elected,D
+2022,house,3,19934,11179,0,31113,Ryan A Bizzarro,Joseph S Kujawa,D,Ryan A Bizzarro,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ryan Bizzarro,Re-elected,D
+2022,house,4,10276,16375,0,26651,Chelsea Oliver,Jacob Daniel Banta,R,Jacob Daniel Banta,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Curt Sonney,Retired,R
+2022,house,5,0,21349,0,21349,,Barry J. Jozwiak,R,Barry J. Jozwiak,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Barry Jozwiak,Re-elected,R
+2022,house,6,8056,17610,0,25666,Nerissa B. Galt,Bradley T. Roae,R,Bradley T. Roae,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Brad Roae,Re-elected,R
+2022,house,7,12818,13559,0,26377,Timothy M Mcgonigle,Parke H Wentling,R,Parke H Wentling,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mark Longietti,Retired,R
+2022,house,8,0,25702,0,25702,,Aaron Joseph Bernstine,R,Aaron Joseph Bernstine,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tim Bonner,Elected (Redistricted to the 17th district),R
+2022,house,9,12090,13599,0,25689,Christopher Sainato,Marla A Brown,R,Marla A Brown,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Chris Sainato,Defeated,R
+2022,house,10,15874,0,0,15874,Amen Brown,,D,Amen Brown,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Aaron Bernstine,Elected (Redistricted to the 8th district),D
+2022,house,11,0,23579,0,23579,,Marci Mustello,R,Marci Mustello,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Marci Mustello,Re-elected,R
+2022,house,12,12734,20996,0,33730,Robert Vigue,Stephenie G A Scialabba,R,Stephenie G A Scialabba,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Daryl Metcalfe,Retired,R
+2022,house,13,11181,16325,0,27506,David Cunningham,John Adda Lawrence,R,John Adda Lawrence,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),John Lawrence,Re-elected,R
+2022,house,14,9402,19781,0,29183,Bruce Allen Carper Jr,James E Marshall,R,James E Marshall,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jim E. Marshall,Re-elected,R
+2022,house,15,0,22375,0,22375,,Joshua Daniel Kail,R,Joshua Daniel Kail,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Josh Kail,Re-elected,R
+2022,house,16,15104,11534,0,26638,Robert F Matzie,Rico T Elmore,D,Robert F Matzie,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Robert Matzie,Re-elected,D
+2022,house,17,0,22001,0,22001,,Timothy R Bonner,R,Timothy R Bonner,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Parke Wentling,Elected (Redistricted into the 7th district),R
+2022,house,18,11459,12558,0,24017,Laurie Smith,Kathleen Christine Tomlinson,R,Kathleen Christine Tomlinson,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),K.C. Tomlinson,Re-elected,R
+2022,house,19,16296,0,0,16296,Aerion Andrew Abney,,D,Aerion Andrew Abney,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Aerion Abney,Re-elected,D
+2022,house,20,17783,11313,0,29096,Emily Kinkead,Matthew J Kruth,D,Emily Kinkead,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Emily Kinkead,Re-elected,D
+2022,house,21,20255,11601,0,31856,Sara Innamorato,Frank Perman,D,Sara Innamorato,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Sara Innamorato,Re-elected,D
+2022,house,22,6442,3662,0,10104,Joshua M Siegel,Robert E Smith Jr,D,Joshua M Siegel,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Peter Schweyer,Elected (Redistricted into the 134th district),D
+2022,house,23,22340,0,2983,25323,Dan B Frankel,,D,Dan B Frankel,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Frankel,Re-elected,D
+2022,house,24,21832,0,0,21832,Latasha Denise Mayes,,D,Latasha Denise Mayes,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Martell Covington,Lost Primary,D
+2022,house,25,16655,11025,0,27680,Brandon Joseph Markosek,Stephen D. Schlauch,D,Brandon Joseph Markosek,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Brandon Markosek,Re-elected,D
+2022,house,26,17853,13463,0,31316,Paul F Friel Jr,Timothy F. Hennessey,D,Paul F Friel Jr,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tim Hennessey,Defeated,D
+2022,house,27,18374,8263,0,26637,Daniel J Deasy,Edward G Brosky,D,Daniel J Deasy,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Deasy,Re-elected,D
+2022,house,28,14432,18376,0,32808,Alison Duncan,Robert W Mercuri,R,Robert W Mercuri,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Rob Mercuri,Re-elected,R
+2022,house,29,21345,15601,1243,38189,Timothy Patrick Brennan,Diane Smith,D,Timothy Patrick Brennan,False,3,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Meghan Schroeder,Retired,D
+2022,house,30,18757,15136,0,33893,Arvind Venkat,Cynthia R Kirk,D,Arvind Venkat,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Lori Mizgorski,Ran for state senate,D
+2022,house,31,24199,15680,0,39879,Perry Sinclair Warren Jr,Bernard C. Sauer,D,Perry Sinclair Warren Jr,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Perry Warren,Re-elected,D
+2022,house,32,21796,0,3555,25351,Anthony M. Deluca,,D,Anthony M. Deluca,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Anthony M. DeLuca,Deceased (name remained on ballot),D
+2022,house,33,15945,13120,0,29065,Mandy Steele,Theodore A. Tomson Ii,D,Mandy Steele,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Carrie Delrosso,Ran for Lt. Governor (Re-districted into the 32nd district),D
+2022,house,34,22990,0,0,22990,Summer Lynn Lee,,D,Summer Lynn Lee,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Summer Lee,Ran for U.S. House; Re-elected,D
+2022,house,35,15241,7817,0,23058,Austin Davis,Donald R Nevills,D,Austin Davis,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Austin Davis,Ran for Lt. Governor; Re-elected,D
+2022,house,36,17385,0,4681,22066,Jessica Lynn Benham,,D,Jessica Lynn Benham,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jessica Benham,Re-elected,D
+2022,house,37,0,25535,0,25535,,Melinda S Fee,R,Melinda S Fee,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mindy Fee,Re-elected,R
+2022,house,38,20430,0,0,20430,Nickolas Pisciottano,,D,Nickolas Pisciottano,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Nick Pisciottano,Re-elected,D
+2022,house,39,12508,18102,0,30610,Richard C Self Jr,Andrew Kuzma,R,Andrew Kuzma,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Puskaric,Lost Primary,R
+2022,house,40,15464,20331,0,35795,Christopher D Todd,Natalie Nicole Stuck,R,Natalie Nicole Stuck,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Natalie Mihalek,Re-elected,R
+2022,house,41,0,18402,6105,24507,,Brett R Miller,R,Brett R Miller,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Brett Miller,Re-elected,R
+2022,house,42,23409,10961,0,34370,Daniel Laurenzano Miller,Patricia A Tylka,D,Daniel Laurenzano Miller,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Miller,Re-elected,D
+2022,house,43,0,18511,0,18511,,Keith James Greiner,R,Keith James Greiner,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Keith Greiner,Re-elected,R
+2022,house,44,13719,16703,0,30422,Debbie L Turici,Valerie S. Gaydos,R,Valerie S. Gaydos,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Valerie Gaydos,Re-elected,R
+2022,house,45,18222,10540,0,28762,Anita Astorino Kulik,Michael Pendel,D,Anita Astorino Kulik,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Anita Astorino Kulik,Re-elected,D
+2022,house,46,0,21777,0,21777,,Jason A Ortitay,R,Jason A Ortitay,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jason Ortitay,Re-elected,R
+2022,house,47,0,19537,0,19537,,Joseph Frank D'Orsie,R,Joseph Frank D'Orsie,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Keith J. Gillespie,Lost primary,R
+2022,house,48,0,20085,0,20085,,Timothy Jon O'Neal,R,Timothy Jon O'Neal,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tim O'Neal,Re-elected,R
+2022,house,49,11045,5511,0,16556,Ismail Smith-Wade-El,Anne Rivers,D,Ismail Smith-Wade-El,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Bud Cook,Elected (Redistricted into the 50th district),D
+2022,house,50,9216,15003,0,24219,Douglas Earl Mason,Donald Cook,R,Donald Cook,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Pam Snyder,Retired,R
+2022,house,51,8269,13383,0,21652,Richard Ringer,Charity Grimm Krupa,R,Charity Grimm Krupa,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Matt Dowling,Withdrew after DUI charge,R
+2022,house,52,0,17962,0,17962,,Ryan J Warner,R,Ryan J Warner,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ryan Warner,Re-elected,R
+2022,house,53,16578,10560,0,27138,Steven Richard Malagari,Jennifer Neha Sodha,D,Steven Richard Malagari,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Steve Malagari,Re-elected,D
+2022,house,54,14379,5685,0,20064,Gregory Scott,Allen Arthur Anderson,D,Gregory Scott,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Robert Brooks,Retired,D
+2022,house,55,11585,18523,0,30108,Scott Gauss,Jill Nixon Cooper,R,Jill Nixon Cooper,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jason Silvis,Lost Primary,R
+2022,house,56,0,23664,0,23664,,George Dunbar,R,George Dunbar,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),George Dunbar,Re-elected,R
+2022,house,57,0,21811,0,21811,,Eric R Nelson,R,Eric R Nelson,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Eric Nelson,Re-elected,R
+2022,house,58,10192,17527,0,27719,Kenneth James Bach,Eric M. Davanzo,R,Eric M. Davanzo,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Eric Davanzo,Re-elected,R
+2022,house,59,0,22149,0,22149,,Leslie Anita Rossi,R,Leslie Anita Rossi,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Leslie Rossi,Re-elected,R
+2022,house,60,8604,19056,0,27660,Robert D George,Abigail E Major,R,Abigail E Major,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Abby Major,Re-elected,R
+2022,house,61,21435,13092,0,34527,Laura Elizabeth Hanbidge,Jessie A Bradica,D,Laura Elizabeth Hanbidge,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Liz Hanbidge,Re-elected,D
+2022,house,62,7604,18147,0,25751,Brian Doyle,James Bruno Struzzi Ii,R,James Bruno Struzzi Ii,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),James Struzzi,Re-elected,R
+2022,house,63,0,23702,0,23702,,Donna R Oberlander,R,Donna R Oberlander,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Donna Oberlander,Re-elected,R
+2022,house,64,0,20286,0,20286,,Robert Lee James,R,Robert Lee James,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Lee James,Re-elected,R
+2022,house,65,0,20203,0,20203,,Kathy L Rapp,R,Kathy L Rapp,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kathy Rapp,Re-elected,R
+2022,house,66,0,21506,0,21506,,Brian A Smith,R,Brian A Smith,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Brian Smith,Re-elected,R
+2022,house,67,0,21089,0,21089,,Martin T. Causer,R,Martin T. Causer,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Martin Causer,Re-elected,R
+2022,house,68,0,22628,0,22628,,Clinton D. Owlett,R,Clinton D. Owlett,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Clint Owlett,Re-elected,R
+2022,house,69,0,25771,0,25771,,Carl Walker Metzgar,R,Carl Walker Metzgar,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Carl Walker Metzgar,Re-elected,R
+2022,house,70,20051,12870,0,32921,Matthew D. Bradford,Arthur Craig Bustard,D,Matthew D. Bradford,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Matthew Bradford,Re-elected,D
+2022,house,71,0,23233,0,23233,,James Patrick Rigby,R,James Patrick Rigby,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),James Rigby,Re-elected,R
+2022,house,72,14129,11775,0,25904,Frank Burns,H Renae Billow,D,Frank Burns,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Frank Burns,Re-elected,D
+2022,house,73,0,21141,0,21141,,Dallas Paul Kephart,R,Dallas Paul Kephart,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tommy Sankey,Retired,R
+2022,house,74,13289,10346,0,23635,Dan K Williams,Dale L Hensel,D,Dan K Williams,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dan K. Williams,Re-elected,D
+2022,house,75,6442,20468,0,26910,Erica L Vogt,Michael J. Armanini,R,Michael J. Armanini,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Michael Armanini,Re-elected,R
+2022,house,76,7627,15776,0,23403,Denise Maris,Stephanie Paige Borowicz,R,Stephanie Paige Borowicz,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Stephanie Borowicz,Re-elected,R
+2022,house,77,14851,9003,0,23854,Harry Scott Conklin,Stephen T Yetsko,D,Harry Scott Conklin,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Scott Conklin,Re-elected,D
+2022,house,78,0,25672,0,25672,,Jesse W Topper,R,Jesse W Topper,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jesse Topper,Re-elected,R
+2022,house,79,0,18434,0,18434,,Louis C. Schmitt Jr.,R,Louis C. Schmitt Jr.,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Louis Schmitt Jr.,Re-elected,R
+2022,house,80,5367,22764,0,28131,Kimberly Capenos,James V Gregory,R,James V Gregory,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jim Gregory,Re-elected,R
+2022,house,81,6759,20424,0,27183,Ian M Kidd,Richard S Irvin,R,Richard S Irvin,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Rich Irvin,Re-elected,R
+2022,house,82,12739,9870,0,22609,Paul R Takac Jr.,Justin V Behrens,D,Paul R Takac Jr.,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),John D. Hershey,Lost primary (Redistricted into the 86th district),D
+2022,house,83,0,16835,0,16835,,Jamie L Flick,R,Jamie L Flick,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jeff Wheeland,Resigned,R
+2022,house,84,0,25957,0,25957,,Joseph D Hamm,R,Joseph D Hamm,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Hamm,Re-elected,R
+2022,house,85,0,21244,0,21244,,David Hummer Rowe,R,David Hummer Rowe,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),David H. Rowe,Re-elected,R
+2022,house,86,0,22536,0,22536,,Perry A. Stambaugh,R,Perry A. Stambaugh,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Perry A. Stambaugh,Re-elected,R
+2022,house,87,13510,18878,0,32388,Kristal Markle,Thomas Holden Kutz,R,Thomas Holden Kutz,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Greg Rothman,Ran for State Senate,R
+2022,house,88,13832,16722,0,30554,Sara Agerton,Sheryl M. Delozier,R,Sheryl M. Delozier,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Sheryl M. Delozier,Re-elected,R
+2022,house,89,0,21928,0,21928,,Robert W Kauffman,R,Robert W Kauffman,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Rob Kauffman,Re-elected,R
+2022,house,90,0,23303,0,23303,,Paul Thomas Schemel,R,Paul Thomas Schemel,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Paul Schemel,Re-elected,R
+2022,house,91,10025,18988,727,29740,Marty L Qually,Daniel P Moul,R,Daniel P Moul,False,3,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Moul,Re-elected,R
+2022,house,92,9281,22040,0,31321,Daniel Almoney,Dawn Keefer,R,Dawn Keefer,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dawn Keefer,Re-elected,R
+2022,house,93,10241,18930,901,30072,Christopher D Rodkey,Paul Michael Jones,R,Paul Michael Jones,False,3,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Paul M. Jones,Re-elected,R
+2022,house,94,0,19838,0,19838,,Wendy Jo Fink,R,Wendy Jo Fink,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Stan Saylor,Lost primary,R
+2022,house,95,11266,0,0,11266,Carol Hill-Evans,,D,Carol Hill-Evans,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Carol Hill-Evans,Re-elected,D
+2022,house,96,17250,10988,0,28238,P Michael Sturla,April Dawn Weaver,D,P Michael Sturla,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Sturla,Re-elected,D
+2022,house,97,0,23282,0,23282,,Steven Curtis Mentzer,R,Steven Curtis Mentzer,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Steven Mentzer,Re-elected,R
+2022,house,98,10718,18910,937,30565,Mark Joseph Temons Ii,Thomas M Jones,R,Thomas M Jones,False,3,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),David Hickernell,Retired,R
+2022,house,99,7220,18057,0,25277,Joshua Michael Caltagirone,David H. Zimmerman,R,David H. Zimmerman,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),David H. Zimmerman,Re-elected,R
+2022,house,100,0,18356,0,18356,,Bryan D. Cutler,R,Bryan D. Cutler,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Bryan Cutler,Re-elected,R
+2022,house,101,8569,14072,0,22641,Catherine Victoria Miller,John A Schlegel,R,John A Schlegel,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Frank Ryan,Retired,R
+2022,house,102,8170,19142,0,27312,Susan Laura Quick,Russell H Diamond,R,Russell H Diamond,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Russ Diamond,Re-elected,R
+2022,house,103,16193,8527,0,24720,Patty Kim,David D Buell,D,Patty Kim,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Patty Kim,Re-elected,D
+2022,house,104,11718,0,4857,16575,David A Madsen,,D,David A Madsen,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Sue Helm,Retired,D
+2022,house,105,16399,9406,0,25805,Justin C Fleming,Therese Lemelle Kenley,D,Justin C Fleming,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Andrew Lewis,Retired (Redistricted into the 104th district),D
+2022,house,106,0,21985,0,21985,,Thomas Mehaffie,R,Thomas Mehaffie,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tom Mehaffie,Re-elected,R
+2022,house,107,6032,18303,0,24335,Ryan Mock,Joanne Carol Stehr,R,Joanne Carol Stehr,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kurt Masser,Retired,R
+2022,house,108,0,21915,0,21915,,Lynda J. Schlegel Culver,R,Lynda J. Schlegel Culver,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Lynda Schlegel-Culver,Re-elected,R
+2022,house,109,7110,15495,2038,24643,Edward R Giannattasio,Robert Leadbeter,R,Robert Leadbeter,False,3,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),David R. Millard,Retired,R
+2022,house,110,0,22426,0,22426,,Tina Pickett,R,Tina Pickett,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tina Pickett,Re-elected,R
+2022,house,111,0,24070,0,24070,,Jonathan A Fritz,R,Jonathan A Fritz,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jonathan Fritz,Re-elected,R
+2022,house,112,17982,10033,0,28015,Kyle J. Mullins,William Burke Torbeck,D,Kyle J. Mullins,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kyle Mullins,Re-elected,D
+2022,house,113,12082,8289,0,20371,Kyle Timothy Donahue,Aaron Sepkowski,D,Kyle Timothy Donahue,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Thom Welby,Retired,D
+2022,house,114,16745,10036,0,26781,Bridget Kosierowski,David A Burgerhoff,D,Bridget Kosierowski,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Bridget Malloy Kosierowski,Re-elected,D
+2022,house,115,11462,8898,0,20360,Maureen E Madden,Krista Rose Paolucci,D,Maureen E Madden,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Maureen Madden,Re-elected,D
+2022,house,116,4571,9811,0,14382,Yesenia Rodriguez,Dane Jeffery Watro Jr,R,Dane Jeffery Watro Jr,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Robert Schnee,Retired (Redistricted),R
+2022,house,117,0,20779,0,20779,,Michael Cabell,R,Michael Cabell,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Karen Boback,Retired,R
+2022,house,118,14611,13310,0,27921,James L Haddock,James E May Iv,D,James L Haddock,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Michael B. Carroll,Retired,D
+2022,house,119,9772,12183,0,21955,Vito V Malacari,Alec Joseph Ryncavage,R,Alec Joseph Ryncavage,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Gerald Mullery,Retired,R
+2022,house,120,9014,17548,0,26562,Fern Leard,Aaron Kaufer,R,Aaron Kaufer,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Aaron Kaufer,Re-elected,R
+2022,house,121,8877,7437,0,16314,Edwin A Pashinski,Eryn Nicole Harvey,D,Edwin A Pashinski,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Eddie Day Pashinski,Re-elected,D
+2022,house,122,7203,18633,0,25836,Richard F. Kost,Doyle Heffley,R,Doyle Heffley,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Doyle Heffley,Re-elected,R
+2022,house,123,7909,17133,0,25042,Kathleen J Benyak,Timothy F Twardzik,R,Timothy F Twardzik,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Timothy Twardzik,Re-elected,R
+2022,house,124,8366,18228,0,26594,Tina M Burns,James A Barton,R,James A Barton,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jerry Knowles,Retired,R
+2022,house,125,0,24038,0,24038,,Joseph P Kerwin,R,Joseph P Kerwin,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Kerwin,Re-elected,R
+2022,house,126,11613,6539,0,18152,Mark L Rozzi,James Daniel Oswald,D,Mark L Rozzi,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mark Rozzi,Re-elected,D
+2022,house,127,7114,3617,0,10731,Manuel M Guzman Jr,Vincent D. Gagliardo Jr.,D,Manuel M Guzman Jr,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Manny Guzman Jr.,Re-elected,D
+2022,house,128,0,21057,0,21057,,Mark M. Gillen,R,Mark M. Gillen,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mark M. Gillen,Re-elected,R
+2022,house,129,11242,8028,0,19270,Johanny Cepeda-Freytiz,Barry J. Llewellyn,D,Johanny Cepeda-Freytiz,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jim Cox,Retired,D
+2022,house,130,0,21838,0,21838,,David M Maloney,R,David M Maloney,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),David Maloney,Re-elected,R
+2022,house,131,14854,18071,0,32925,Kevin Branco,V. Milou Mackenzie,R,V. Milou Mackenzie,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Milou Mackenzie,Re-elected,R
+2022,house,132,16135,9824,566,26525,Michael Harry Schlossberg,Bethney Quinn Finch,D,Michael Harry Schlossberg,False,3,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Schlossberg,Re-elected,D
+2022,house,133,17431,0,0,17431,Jeanne Mcneill,,D,Jeanne Mcneill,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jeanne McNeill,Re-elected,D
+2022,house,134,10245,6746,0,16991,Peter George Schweyer,Brent Labenberg,D,Peter George Schweyer,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ryan Mackenzie,Elected (Redistricted into the 187th district),D
+2022,house,135,17181,0,0,17181,Stephen P Samuelson,,D,Stephen P Samuelson,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Steve Samuelson,Re-elected,D
+2022,house,136,14932,0,0,14932,Robert Freeman,,D,Robert Freeman,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Robert L. Freeman,Re-elected,D
+2022,house,137,14916,15619,0,30535,Anna R Thomas,Joseph T. Emrick,R,Joseph T. Emrick,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Emrick,Re-elected,R
+2022,house,138,11309,19053,0,30362,Eugene Hunter,Ann L Flood,R,Ann L Flood,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ann Flood,Re-elected,R
+2022,house,139,9875,16680,0,26555,Meghan Rosenfeld,Joseph W Adams,R,Joseph W Adams,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Michael Peifer,Retired,R
+2022,house,140,17970,0,0,17970,John T Galloway,,D,John T Galloway,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),John Galloway,Re-elected,D
+2022,house,141,14787,7771,449,23007,Tina Marie Davis,Kelly A Bellerby-Allen,D,Tina Marie Davis,False,3,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tina Davis,Re-elected,D
+2022,house,142,15371,15447,0,30818,Mark Moffa,Joseph F. Hogan,R,Joseph F. Hogan,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Frank Farry,Ran for State Senate,R
+2022,house,143,16215,18418,0,34633,Gwendolyn R Stoltz,Shelby E. Labs,R,Shelby E. Labs,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Shelby Labs,Re-elected,R
+2022,house,144,16123,15608,0,31731,Brian Munroe,F. Todd Polinchock,D,Brian Munroe,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Todd Polinchock,Defeated,D
+2022,house,145,12127,17537,541,30205,James E Miller Jr,Craig T. Staats,R,Craig T. Staats,False,3,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Craig Staats,Re-elected,R
+2022,house,146,16091,9935,0,26026,Joseph P Ciresi,Thomas J Neafcy Jr,D,Joseph P Ciresi,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Ciresi,Re-elected,D
+2022,house,147,14626,17667,0,32293,Alexandra Lynn Wisser,Donna Marie Scheuren,R,Donna Marie Scheuren,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tracy Pennycuick,Ran for State Senate,R
+2022,house,148,27486,8488,0,35974,Mary Josephine Daley,Francis X O'Donnell,D,Mary Josephine Daley,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mary Jo Daley,Re-elected,D
+2022,house,149,21638,8680,0,30318,Timothy Patrick Briggs,Nancy Price,D,Timothy Patrick Briggs,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tim Briggs,Re-elected,D
+2022,house,150,17822,12610,0,30432,Joseph G. Webster,Beth Ann Mazza,D,Joseph G. Webster,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Webster,Re-elected,D
+2022,house,151,16805,16742,0,33547,Melissa Cerrato,William Todd Stephens,D,Melissa Cerrato,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Todd Stephens,Defeated,D
+2022,house,152,17118,11384,0,28502,Nancy Guenst,John A Weinrich Sr,D,Nancy Guenst,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Nancy Guenst,Re-elected,D
+2022,house,153,22600,10255,0,32855,Benjamin Sanchez,Larry Steven Ulrich,D,Benjamin Sanchez,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ben Sanchez,Re-elected,D
+2022,house,154,26418,6312,0,32730,Napoleon J Nelson,Angelina Reymunda Banks,D,Napoleon J Nelson,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Napoleon Nelson,Re-elected,D
+2022,house,155,18604,14130,0,32734,Danielle Friel Otten,Kyle P Scribner,D,Danielle Friel Otten,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Danielle Friel Otten,Re-elected,D
+2022,house,156,18510,12537,0,31047,Christopher Pielli,Heidi R. Vanderwaal,D,Christopher Pielli,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dianne Herrin,Retired,D
+2022,house,157,21326,13363,0,34689,Melissa Shusterman,Sarah K Marvin,D,Melissa Shusterman,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Melissa Shusterman,Re-elected,D
+2022,house,158,17207,13716,0,30923,Christina D. Sappey,Leon R. Spencer Jr.,D,Christina D. Sappey,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Christina Sappey,Re-elected,D
+2022,house,159,11852,6172,0,18024,Carol Kazeem,Ruth Moton,D,Carol Kazeem,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Brian Joseph Kirkland,Lost primary,D
+2022,house,160,16698,18353,0,35051,Catherine E Spahr,Wendell Craig Williams,R,Wendell Craig Williams,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Craig Williams,Re-elected,R
+2022,house,161,18122,12296,0,30418,Leanne T. Krueger,Edward A Mongelluzzo,D,Leanne T. Krueger,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Leanne Krueger,Re-elected,D
+2022,house,162,15145,10625,0,25770,David M Delloso,Michelle Stock Mattus,D,David M Delloso,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),David Delloso,Re-elected,D
+2022,house,163,16448,8450,399,25297,Michael P Zabel,Kenneth P Rucci,D,Michael P Zabel,False,3,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Michael Zabel,Re-elected,D
+2022,house,164,15560,0,0,15560,Gina H. Curry,,D,Gina H. Curry,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Gina Curry,Re-elected,D
+2022,house,165,21145,13056,403,34604,Jennifer O'Mara,Nichole Leann Missino,D,Jennifer O'Mara,False,3,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jennifer O'Mara,Re-elected,D
+2022,house,166,22941,11758,350,35049,Gregory S. Vitali,Kimberly J Razzano,D,Gregory S. Vitali,False,3,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Greg Vitali,Re-elected,D
+2022,house,167,19276,12867,0,32143,Kristine C. Howard,Gail A. Newman,D,Kristine C. Howard,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kristine Howard,Re-elected,D
+2022,house,168,17485,13708,0,31193,Lisa Borowski,Christopher B. Quinn,D,Lisa Borowski,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Christopher B. Quinn,Defeated,D
+2022,house,169,7846,19808,0,27654,Isaac Riston,Kate Anne Klunk,R,Kate Anne Klunk,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kate Klunk,Re-elected,R
+2022,house,170,0,13531,0,13531,,Martina A White,R,Martina A White,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Martina White,Re-elected,R
+2022,house,171,7415,19028,0,26443,Robert Zeigler,Kerry A. Benninghoff,R,Kerry A. Benninghoff,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kerry Benninghoff,Re-elected,R
+2022,house,172,10625,8023,0,18648,Kevin J. Boyle,Al Taubenberger,D,Kevin J. Boyle,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kevin J. Boyle,Re-elected,D
+2022,house,173,9548,0,0,9548,Patrick Liam Gallagher,,D,Patrick Liam Gallagher,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Michael Driscoll,Ran for Philadelphia City Council,D
+2022,house,174,11294,0,0,11294,Edward J Neilson,,D,Edward J Neilson,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ed Neilson,Re-elected,D
+2022,house,175,23904,0,0,23904,Marylouise Isaacson,,D,Marylouise Isaacson,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mary Isaacson,Re-elected,D
+2022,house,176,9024,14036,1237,24297,Hope Christman,Jack B Rader Jr,R,Jack B Rader Jr,False,3,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jack Rader,Re-elected,R
+2022,house,177,11070,5751,0,16821,Joseph Hohenstein,Mark Joseph Lavelle,D,Joseph Hohenstein,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joseph C. Hohenstein,Re-elected,D
+2022,house,178,15410,20075,0,35485,Ilya Breyman,Kristin Marcell,R,Kristin Marcell,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Wendi Thomas,Retired,R
+2022,house,179,9256,0,0,9256,Jason T Dawkins,,D,Jason T Dawkins,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jason Dawkins,Re-elected,D
+2022,house,180,6584,0,0,6584,Jose A Giral,,D,Jose A Giral,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Angel Cruz,Retired,D
+2022,house,181,15426,0,0,15426,Malcolm Kenyatta,,D,Malcolm Kenyatta,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Malcolm Kenyatta,Re-elected,D
+2022,house,182,26728,3161,0,29889,Benjamin R Waxman,Albert Ivan Robles Montas,D,Benjamin R Waxman,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Brian Sims,Ran for Lt. Governor,D
+2022,house,183,0,21730,0,21730,,Zachary Allen Mako,R,Zachary Allen Mako,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Zach Mako,Re-elected,R
+2022,house,184,15758,5281,0,21039,Elizabeth A. Fiedler,Marjilyn Murray,D,Elizabeth A. Fiedler,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Elizabeth Fiedler,Re-elected,D
+2022,house,185,14122,0,0,14122,Regina G Young,,D,Regina G Young,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Regina Young,Re-elected,D
+2022,house,186,20466,0,0,20466,Jordan Alexander Harris,,D,Jordan Alexander Harris,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jordan A. Harris,Re-elected,D
+2022,house,187,0,22990,0,22990,,Ryan Mackenzie,R,Ryan Mackenzie,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Gary Day,Lost Primary,R
+2022,house,188,18733,0,0,18733,Rick Chester Krajewski,,D,Rick Chester Krajewski,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Rick Krajewski,Re-elected,D
+2022,house,189,11346,8967,0,20313,Tarah Probst,Stephen Walter Ertle,D,Tarah Probst,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Rosemary Brown,Ran for State Senate,D
+2022,house,190,17056,0,583,17639,Gwendolyn Veronica Green,,D,Gwendolyn Veronica Green,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Amen Brown,Elected (Redistricted into the 10th district),D
+2022,house,191,16572,0,0,16572,Joanna E. Mcclinton,,D,Joanna E. Mcclinton,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joanna E. McClinton,Re-elected,D
+2022,house,192,19438,0,0,19438,Morgan Cephas,,D,Morgan Cephas,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Morgan Cephas,Re-elected,D
+2022,house,193,0,20936,0,20936,,Torren C Ecker,R,Torren C Ecker,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Torren Ecker,Re-elected,R
+2022,house,194,23159,0,2246,25405,Tarik Khan,,D,Tarik Khan,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Pamela DeLissio,Lost Primary,D
+2022,house,195,19697,0,0,19697,Donna Bullock,,D,Donna Bullock,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Donna Bullock,Re-elected,D
+2022,house,196,0,22899,0,22899,,Seth M. Grove,R,Seth M. Grove,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Seth Grove,Re-elected,R
+2022,house,197,10835,0,0,10835,Danilo R Burgos,,D,Danilo R Burgos,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Danilo Burgos,Re-elected,D
+2022,house,198,16788,0,0,16788,Darisha K Parker,,D,Darisha K Parker,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Darisha Parker,Re-elected,D
+2022,house,199,10181,16230,0,26411,Robert Alan Howe,Barbara Gleim,R,Barbara Gleim,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Barbara Gleim,Re-elected,R
+2022,house,200,29663,1216,0,30879,Christopher M Rabb,Kionna West,D,Christopher M Rabb,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Chris Rabb,Re-elected,D
+2022,house,201,20235,0,0,20235,Stephen Kinsey,,D,Stephen Kinsey,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Stephen Kinsey,Re-elected,D
+2022,house,202,7490,0,0,7490,Jared G Solomon,,D,Jared G Solomon,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jared Solomon,Re-elected,D
+2022,house,203,12300,0,0,12300,Anthony A. Bellmon,,D,Anthony A. Bellmon,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Isabella Fitzgerald,Lost Primary (Redistricted into the 200th district),D
+2022,senate,2,36494,0,0,36494,Christine M Tartaglione,,D,Christine M Tartaglione,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Christine Tartaglione,Re-elected,D
+2022,senate,4,101845,17975,0,119820,Arthur L Haywood Iii,Todd Johnson,D,Arthur L Haywood Iii,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Arthur L. Haywood III,Re-elected,D
+2022,senate,6,57218,67395,1961,126574,Ann Marie Mitchell,Frank A. Farry,R,Frank A. Farry,False,3,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Robert M. Tomlinson,Retired,R
+2022,senate,8,70557,10911,0,81468,Anthony Hardy Williams,John Vincent Hayes Iii,D,Anthony Hardy Williams,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Anthony H. Williams,Re-elected,D
+2022,senate,10,77773,54988,0,132761,Steven J Santarsiero,Matthew Mccullough,D,Steven J Santarsiero,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Steve Santarsiero,Re-elected,D
+2022,senate,12,77532,52033,0,129565,Maria Collett,Robert Davies,D,Maria Collett,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Maria Collett,Re-elected,D
+2022,senate,14,46444,40360,0,86804,Nicholas P Miller,Dean N. Browning,D,Nicholas P Miller,False,2,I,2022_LRC,PA DoS precinct returns (pa.gov bulk data),John Yudichak,Retired,D
+2022,senate,16,57845,68344,0,126189,Mark E Pinsley,Jarrett Charles Coleman,R,Jarrett Charles Coleman,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Pat Browne,Defeated in primary,R
+2022,senate,18,61429,42828,0,104257,Lisa M Boscola,John Jules Merhottein Jr,D,Lisa M Boscola,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Lisa Boscola,Re-elected,D
+2022,senate,20,36419,76446,0,112865,Jaclyn E Baker,Elisabeth J. Baker,R,Elisabeth J. Baker,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Lisa Baker,Re-elected,R
+2022,senate,22,54127,35480,0,89607,Martin B Flynn,Thomas Bassett,D,Martin B Flynn,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Marty Flynn,Re-elected,D
+2022,senate,24,58053,62893,0,120946,Jill Dennin,Tracy E Pennycuick,R,Tracy E Pennycuick,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Bob Mensch,Retired,R
+2022,senate,26,66404,44195,0,110599,Timothy P Kearney,Frank Agovino,D,Timothy P Kearney,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tim Kearney,Re-elected,D
+2022,senate,28,37316,75419,0,112735,Judith A Mccormick Higgins,Kristin Lee Phillips-Hill,R,Kristin Lee Phillips-Hill,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kristin Phillips-Hill,Re-elected,R
+2022,senate,30,24049,76863,0,100912,Carol Evon Taylor,Judith F Ward,R,Judith F Ward,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Judy Ward,Re-elected,R
+2022,senate,32,25477,76852,0,102329,Sydney C Vegoda Hovis,Patrick J. Stefano,R,Patrick J. Stefano,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Patrick J. Stefano,Re-elected,R
+2022,senate,34,42598,74238,0,116836,James H. Massey Jr.,William Gregory Rothman,R,William Gregory Rothman,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jake Corman,Retired to run for Governor,R
+2022,senate,36,0,91710,0,91710,,Ryan P Aument,R,Ryan P Aument,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ryan P. Aument,Re-elected,R
+2022,senate,38,70854,56139,0,126993,Lindsey M Williams,Lori A. Mizgorski,D,Lindsey M Williams,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Lindsey Williams,Re-elected,D
+2022,senate,40,43557,53795,0,97352,Jennifer Anne Shukaitis,Rosemary Maula Brown,R,Rosemary Maula Brown,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mario Scavello,Retired,R
+2022,senate,42,85905,0,0,85905,Wayne D. Fontana,,D,Wayne D. Fontana,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Wayne D. Fontana,Re-elected,D
+2022,senate,44,70790,56343,0,127133,Katie J Muth,Jessica B Florio,D,Katie J Muth,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Katie Muth,Re-elected,D
+2022,senate,46,0,78289,0,78289,,Camera Bartolotta,R,Camera Bartolotta,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Camera C. Bartolotta,Re-elected,R
+2022,senate,48,34264,74127,0,108391,Calvin Craig Clements,Christopher M Gebhard,R,Christopher M Gebhard,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Chris Gebhard,Re-elected,R
+2022,senate,50,30434,75842,0,106276,Rianna S Czech,Michele Brooks,R,Michele Brooks,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Michele Brooks,Re-elected,R
+2024,house,1,19327,0,0,19327,Patrick J Harkins,,D,Patrick J Harkins,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Pat Harkins,Reelected,D
+2024,house,2,19803,11639,0,31442,Robert E. Merski,Matthew L Strupczewski,D,Robert E. Merski,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Robert Merski,Reelected,D
+2024,house,3,22015,16155,0,38170,Ryan Bizzarro,Micah S. Goring,D,Ryan Bizzarro,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ryan Bizzarro,Reelected,D
+2024,house,4,10845,22686,0,33531,Joseph Richard Cancilla,Jake Banta,R,Jake Banta,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jake Banta,Reelected,R
+2024,house,5,11801,23664,0,35465,Heather M Hanna,Eric J Weaknecht,R,Eric J Weaknecht,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Barry Jozwiak,Retired,R
+2024,house,6,9790,22802,0,32592,Michael Charles Walker,Bradley T Roae,R,Bradley T Roae,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Brad Roae,Reelected,R
+2024,house,7,0,25599,0,25599,,Parke H Wentling,R,Parke H Wentling,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Parke Wentling,Reelected,R
+2024,house,8,0,33825,0,33825,,Aaron Joseph Bernstine,R,Aaron Joseph Bernstine,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Aaron Bernstine,Reelected,R
+2024,house,9,0,27029,0,27029,,Marla Gallo Brown,R,Marla Gallo Brown,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Marla Brown,Reelected,R
+2024,house,10,22919,0,0,22919,Amen R. Brown,,D,Amen R. Brown,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Amen Brown,Reelected,D
+2024,house,11,0,29484,4397,33881,,Marci Mustello,R,Marci Mustello,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Marci Mustello,Reelected,R
+2024,house,12,15103,27840,0,42943,Robert L Vigue,Stephenie G. A. Scialabba,R,Stephenie G. A. Scialabba,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Stephenie Scialabba,Reelected,R
+2024,house,13,14891,20572,0,35463,Cristian Luna-Valente,John Adda Lawrence,R,John Adda Lawrence,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),John Lawrence,Reelected,R
+2024,house,14,12915,24270,0,37185,Kenya Johns,Roman Kozak Jr,R,Roman Kozak Jr,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jim E. Marshall,Retired,R
+2024,house,15,11185,24769,0,35954,Ashlee Anne Caul,Joshua Daniel Kail,R,Joshua Daniel Kail,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Josh Kail,Reelected,R
+2024,house,16,18198,16584,0,34782,Robert F. Matzie,Michael J Perich,D,Robert F. Matzie,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Robert Matzie,Reelected,D
+2024,house,17,0,29173,0,29173,,Timothy R Bonner,R,Timothy R Bonner,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tim Bonner,Reelected,R
+2024,house,18,14468,18160,0,32628,Anand Gunvant Patel,Kathleen C Tomlinson,R,Kathleen C Tomlinson,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),K.C. Tomlinson,Reelected,R
+2024,house,19,22645,0,0,22645,Aerion Andrew Abney,,D,Aerion Andrew Abney,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Aerion Abney,Reelected,D
+2024,house,20,21322,14678,0,36000,Emily Kinkead,Matthew J Kruth,D,Emily Kinkead,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Emily Kinkead,Reelected,D
+2024,house,21,29301,0,0,29301,Lindsay Powell,,D,Lindsay Powell,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Lindsay Powell,Reelected,D
+2024,house,22,13282,0,0,13282,Joshua M Siegel,,D,Joshua M Siegel,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joshua Siegel,Reelected,D
+2024,house,23,29844,0,0,29844,Dan B Frankel,,D,Dan B Frankel,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Frankel,Reelected,D
+2024,house,24,27962,0,0,27962,Latasha D. Mayes,,D,Latasha D. Mayes,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),La'Tasha D. Mayes,Reelected,D
+2024,house,25,20865,14140,0,35005,Brandon Joseph Markosek,John D Ritter,D,Brandon Joseph Markosek,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Brandon Markosek,Reelected,D
+2024,house,26,22421,16675,0,39096,Paul Franklin Friel Jr,Shawn David Blickley,D,Paul Franklin Friel Jr,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Paul Friel,Reelected,D
+2024,house,27,26101,0,0,26101,Daniel J Deasy,,D,Daniel J Deasy,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Deasy,Reelected,D
+2024,house,28,17514,23228,0,40742,William A Petulla,Jeremy K Shaffer,R,Jeremy K Shaffer,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Rob Mercuri,Retired (Ran for U.S. House),R
+2024,house,29,25176,19118,963,45257,Timothy Patrick Brennan,Steven Mekanik,D,Timothy Patrick Brennan,False,3,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tim Brennan,Reelected,D
+2024,house,30,21896,17748,676,40320,Arvind Venkat,Nathan J Wolfe,D,Arvind Venkat,False,3,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Arvind Venkat,Reelected,D
+2024,house,31,27837,19477,0,47314,Perry Sinclair Warren Jr.,Bernard Charles Sauer,D,Perry Sinclair Warren Jr.,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Perry Warren,Reelected,D
+2024,house,32,0,0,31207,31207,,,D,Joseph Melvin Mcandrew,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe McAndrew,Reelected,D/R
+2024,house,33,20030,15867,0,35897,Mandy Steele,Gary William Lotz,D,Mandy Steele,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mandy Steele,Reelected,D
+2024,house,34,30209,0,0,30209,Abigail Salisbury,,D,Abigail Salisbury,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Abigail Salisbury,Reelected,D
+2024,house,35,23550,0,0,23550,Matthew R. Gergely,,D,Matthew R. Gergely,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Matt Gergely,Reelected,D
+2024,house,36,22253,0,5981,28234,Jessica Lynn Benham,,D,Jessica Lynn Benham,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jessica Benham,Reelected,D
+2024,house,37,13002,26131,0,39133,John J George,Melinda S Fee,R,Melinda S Fee,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mindy Fee,Reelected,R
+2024,house,38,19559,15675,0,35234,John C Inglis Iii,Stone Sobieralski,D,John C Inglis Iii,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Nick Pisciottano,Retired (Ran for State Senate),D
+2024,house,39,14546,23808,0,38354,Angela Girol,Andrew M Kuzma,R,Andrew M Kuzma,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Andrew Kuzma,Reelected,R
+2024,house,40,16518,25165,0,41683,Peter Kohnke,Natalie Stuck,R,Natalie Stuck,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Natalie Mihalek,Reelected,R
+2024,house,41,15870,19926,0,35796,Bradford Terrell Chambers,Brett R Miller,R,Brett R Miller,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Brett Miller,Reelected,R
+2024,house,42,26932,13436,0,40368,Daniel Laurenzano Miller,Joseph D Leckenby,D,Daniel Laurenzano Miller,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Miller,Reelected,D
+2024,house,43,0,23834,0,23834,,Keith James Greiner,R,Keith James Greiner,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Keith Greiner,Reelected,R
+2024,house,44,17872,20811,0,38683,Hadley B Haas,Valerie S. Gaydos,R,Valerie S. Gaydos,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Valerie Gaydos,Reelected,R
+2024,house,45,21045,15192,0,36237,Anita Astorino Kulik,James Matthew Julius,D,Anita Astorino Kulik,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Anita Astorino Kulik,Reelected,D
+2024,house,46,13931,22888,0,36819,Alexander Taylor,Jason A. Ortitay,R,Jason A. Ortitay,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jason Ortitay,Reelected,R
+2024,house,47,13201,22322,0,35523,Edward Lee Ritter,Joseph Frank D'Orsie,R,Joseph Frank D'Orsie,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe D'Orsie,Reelected,R
+2024,house,48,0,24213,0,24213,,Timothy Jon O'Neal,R,Timothy Jon O'Neal,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tim O'Neal,Reelected,R
+2024,house,49,18064,0,0,18064,Ismail Muhammed Smith-Wade-El,,D,Ismail Muhammed Smith-Wade-El,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ismail Smith-Wade-El,Reelected,D
+2024,house,50,9131,20424,0,29555,Drew E. R. Manko,Donald Cook,R,Donald Cook,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Bud Cook,Reelected,R
+2024,house,51,10425,19945,0,30370,George Anthony Rattay,Charity Grimm Krupa,R,Charity Grimm Krupa,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Charity Grimm Krupa,Reelected,R
+2024,house,52,0,25794,0,25794,,Ryan James Warner,R,Ryan James Warner,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ryan Warner,Reelected,R
+2024,house,53,21057,13912,0,34969,Steven R Malagari,Cheryl Bonavita-Cressman,D,Steven R Malagari,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Steve Malagari,Reelected,D
+2024,house,54,18584,8092,0,26676,Gregory Scott,Martin Dickerson,D,Gregory Scott,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Greg Scott,Reelected,D
+2024,house,55,12535,26389,0,38924,Davon Magwood,Jill Nixon Cooper,R,Jill Nixon Cooper,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jill Cooper,Reelected,R
+2024,house,56,0,32092,0,32092,,Brian Casey Allen Rasel,R,Brian Casey Allen Rasel,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),George Dunbar,Retired,R
+2024,house,57,0,29981,0,29981,,Eric R. Nelson,R,Eric R. Nelson,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Eric Nelson,Reelected,R
+2024,house,58,11258,25276,0,36534,Cherri Lynn Rogers,Eric M. Davanzo,R,Eric M. Davanzo,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Eric Davanzo,Reelected,R
+2024,house,59,11776,27202,0,38978,Margaret A Zelenak,Leslie Rossi,R,Leslie Rossi,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Leslie Rossi,Reelected,R
+2024,house,60,0,30718,0,30718,,Abigail E Major,R,Abigail E Major,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Abby Major,Reelected,R
+2024,house,61,25068,16109,0,41177,Laura Elizabeth Frances Hanbidge,Michelle L Rupp,D,Laura Elizabeth Frances Hanbidge,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Liz Hanbidge,Reelected,D
+2024,house,62,0,28152,0,28152,,James B. Struzzi Ii,R,James B. Struzzi Ii,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),James Struzzi,Reelected,R
+2024,house,63,6742,27017,0,33759,Pat Ritchie,Joshua Kent Bashline,R,Joshua Kent Bashline,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Donna Oberlander,Retired,R
+2024,house,64,0,25456,3814,29270,,Robert Lee James,R,Robert Lee James,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Lee James,Reelected,R
+2024,house,65,8581,23155,0,31736,Erin G Willman,Kathy L Rapp,R,Kathy L Rapp,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kathy Rapp,Reelected,R
+2024,house,66,0,28232,0,28232,,Brian A Smith,R,Brian A Smith,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Brian Smith,Reelected,R
+2024,house,67,5551,25135,0,30686,Rajeev N Pradhan,Martin T. Causer,R,Martin T. Causer,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Martin Causer,Reelected,R
+2024,house,68,0,29716,0,29716,,Clinton D Owlett,R,Clinton D Owlett,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Clint Owlett,Reelected,R
+2024,house,69,0,32670,0,32670,,Carl Walker Metzgar,R,Carl Walker Metzgar,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Carl Walker Metzgar,Reelected,R
+2024,house,70,24570,16267,0,40837,Matthew D Bradford,Ed Moye,D,Matthew D Bradford,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Matthew Bradford,Reelected,D
+2024,house,71,0,30204,0,30204,,James Patrick Rigby,R,James Patrick Rigby,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),James Rigby,Reelected,R
+2024,house,72,16780,15851,0,32631,Frank Burns,Amy Marie Bradley,D,Frank Burns,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Frank Burns,Reelected,D
+2024,house,73,0,28465,0,28465,,Dallas Paul Kephart,R,Dallas Paul Kephart,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dallas Kephart,Reelected,R
+2024,house,74,17667,14428,0,32095,Dan K Williams,Dale L Hensel,D,Dan K Williams,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dan K. Williams,Reelected,D
+2024,house,75,0,30415,0,30415,,Michael J Armanini,R,Michael J Armanini,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Michael Armanini,Reelected,R
+2024,house,76,9453,21393,0,30846,Denise I Maris,Stephanie Paige Borowicz,R,Stephanie Paige Borowicz,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Stephanie Borowicz,Reelected,R
+2024,house,77,18548,11682,0,30230,Harry Scott Conklin,Marie A Librizzi,D,Harry Scott Conklin,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Scott Conklin,Reelected,D
+2024,house,78,0,31152,0,31152,,Jesse W Topper,R,Jesse W Topper,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jesse Topper,Reelected,R
+2024,house,79,0,25629,0,25629,,Louis Charles Schmitt Jr.,R,Louis Charles Schmitt Jr.,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Louis Schmitt Jr.,Reelected,R
+2024,house,80,0,30518,0,30518,,Scott D Barger,R,Scott D Barger,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jim Gregory,Lost primary,R
+2024,house,81,6975,26840,0,33815,Sean C Steeg,Richard S. Irvin,R,Richard S. Irvin,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Rich Irvin,Reelected,R
+2024,house,82,16558,14221,0,30779,Paul R. Takac Jr.,Therese J Rohal-Hollen,D,Paul R. Takac Jr.,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Paul Takac,Reelected,D
+2024,house,83,0,23285,0,23285,,Jamie L Flick,R,Jamie L Flick,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jamie Flick,Reelected,R
+2024,house,84,0,33611,0,33611,,Joseph D Hamm,R,Joseph D Hamm,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Hamm,Reelected,R
+2024,house,85,9793,24977,0,34770,Nicholas Samuel Jacobson,David Hummer Rowe,R,David Hummer Rowe,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),David H. Rowe,Reelected,R
+2024,house,86,0,29341,0,29341,,Perry A. Stambaugh,R,Perry A. Stambaugh,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Perry A. Stambaugh,Reelected,R
+2024,house,87,15440,24861,0,40301,John Patrick Flood Jr,Thomas H Kutz,R,Thomas H Kutz,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Thomas Kutz,Reelected,R
+2024,house,88,16983,20882,0,37865,Sara Agerton,Sheryl M Delozier,R,Sheryl M Delozier,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Sheryl M. Delozier,Reelected,R
+2024,house,89,10014,24531,0,34545,Noah Stuart Kreischer,Robert W. Kauffman,R,Robert W. Kauffman,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Rob Kauffman,Reelected,R
+2024,house,90,0,29817,0,29817,,Chad Gerald Reichard,R,Chad Gerald Reichard,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Paul Schemel,Retired,R
+2024,house,91,0,30080,0,30080,,Daniel P Moul,R,Daniel P Moul,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Moul,Reelected,R
+2024,house,92,11710,27938,0,39648,Daniel A Almoney,Marc S Anderson,R,Marc S Anderson,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dawn Keefer,Retired (Ran for State Senate),R
+2024,house,93,0,29780,0,29780,,Paul Michael Jones,R,Paul Michael Jones,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Jones,Reelected,R
+2024,house,94,0,27766,0,27766,,Wendy Fink,R,Wendy Fink,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Wendy Fink,Reelected,R
+2024,house,95,12812,8852,0,21664,Carol D Hill-Evans,Jasmine Rivera,D,Carol D Hill-Evans,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Carol Hill-Evans,Reelected,D
+2024,house,96,21244,13955,0,35199,Stephanie Nichole Rivera,Eric Beezer,D,Stephanie Nichole Rivera,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Sturla,Withdrew,D
+2024,house,97,14732,23846,0,38578,Robert James Rudy,Steven Curtis Mentzer,R,Steven Curtis Mentzer,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Steven Mentzer,Reelected,R
+2024,house,98,13650,24706,0,38356,Lynn W Mccleary,Thomas M Jones,R,Thomas M Jones,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tom Jones,Reelected,R
+2024,house,99,0,26561,0,26561,,David H Zimmerman,R,David H Zimmerman,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),David H. Zimmerman,Reelected,R
+2024,house,100,0,23316,0,23316,,Bryan D. Cutler,R,Bryan D. Cutler,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Bryan Cutler,Reelected,R
+2024,house,101,0,23371,0,23371,,John A Schlegel,R,John A Schlegel,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),John A. Schlegel,Reelected,R
+2024,house,102,0,27886,0,27886,,Russell H Diamond,R,Russell H Diamond,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Russ Diamond,Reelected,R
+2024,house,103,18896,12308,0,31204,Nathan Davidson,Cynthia P Ward,D,Nathan Davidson,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Patty Kim,Retired (Ran for State Senate),D
+2024,house,104,19066,0,0,19066,David A Madsen,,D,David A Madsen,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dave Madsen,Reelected,D
+2024,house,105,25941,0,0,25941,Justin Curtis Fleming,,D,Justin Curtis Fleming,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Justin C. Fleming,Reelected,D
+2024,house,106,13855,23615,0,37470,Anju Singh,Thomas L. Mehaffie Iii,R,Thomas L. Mehaffie Iii,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tom Mehaffie,Reelected,R
+2024,house,107,0,28129,0,28129,,Joanne Carol Stehr,R,Joanne Carol Stehr,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joanne Stehr,Reelected,R
+2024,house,108,0,27794,0,27794,,Michael A.K. Stender Jr.,R,Michael A.K. Stender Jr.,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Michael Stender,Reelected,R
+2024,house,109,10534,21586,0,32120,Nicholas S Mcgaw,Robert Medin Leadbeter Ii,R,Robert Medin Leadbeter Ii,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Robert Leadbeter,Reelected,R
+2024,house,110,0,30496,0,30496,,Tina Pickett,R,Tina Pickett,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tina Pickett,Reelected,R
+2024,house,111,0,31528,0,31528,,Jonathan A Fritz,R,Jonathan A Fritz,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jonathan Fritz,Reelected,R
+2024,house,112,26329,0,0,26329,Kyle James Mullins,,D,Kyle James Mullins,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kyle Mullins,Reelected,D
+2024,house,113,19389,0,0,19389,Kyle T. Donahue,,D,Kyle T. Donahue,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kyle Donahue,Reelected,D
+2024,house,114,24473,0,0,24473,Bridget Malloy Kosierowski,,D,Bridget Malloy Kosierowski,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Bridget Malloy Kosierowski,Reelected,D
+2024,house,115,15955,13894,0,29849,Maureen E Madden,Matthew Joseph Long,D,Maureen E Madden,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Maureen Madden,Reelected,D
+2024,house,116,5792,15237,0,21029,Deborah L Adoff,Dane Jeffery Watro Jr,R,Dane Jeffery Watro Jr,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dane Watro,Reelected,R
+2024,house,117,0,28188,0,28188,,James Patrick Walsh,R,James Patrick Walsh,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Cabell,Lost Primary,R
+2024,house,118,19801,15404,0,35205,James L Haddock,Mckayla Kathio,D,James L Haddock,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jim Haddock,Reelected,D
+2024,house,119,10623,18031,0,28654,Megan Kocher,Alec Joseph Ryncavage,R,Alec Joseph Ryncavage,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Alec Ryncavage,Reelected,R
+2024,house,120,13740,18700,0,32440,Fern Leard,Brenda M Pugh,R,Brenda M Pugh,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Aaron Kaufer,Retired,R
+2024,house,121,11692,9459,0,21151,Edwin Pashinski,Donald J Disler,D,Edwin Pashinski,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Eddie Day Pashinski,Reelected,D
+2024,house,122,0,28006,0,28006,,Doyle Heffley,R,Doyle Heffley,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Doyle Heffley,Reelected,R
+2024,house,123,8686,23371,0,32057,Michael Zvalaren Iii,Timothy Frank Twardzik,R,Timothy Frank Twardzik,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Timothy Twardzik,Reelected,R
+2024,house,124,9562,24236,0,33798,Tina M Burns,James A Barton,R,James A Barton,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jamie Barton,Reelected,R
+2024,house,125,12264,26612,0,38876,Eugene P Stilp,Joseph P Kerwin,R,Joseph P Kerwin,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Kerwin,Reelected,R
+2024,house,126,14005,11052,0,25057,Jacklyn H Rusnock,James D Oswald,D,Jacklyn H Rusnock,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mark Rozzi,Retired,D
+2024,house,127,12684,0,0,12684,Manuel M. Guzman Jr,,D,Manuel M. Guzman Jr,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Manny Guzman Jr.,Reelected,D
+2024,house,128,0,28117,0,28117,,Mark M. Gillen,R,Mark M. Gillen,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mark M. Gillen,Reelected,R
+2024,house,129,14808,11479,0,26287,Johanny Cepeda-Freytiz,Susan G Larkin,D,Johanny Cepeda-Freytiz,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Johanny Cepeda-Freytiz,Reelected,D
+2024,house,130,12751,24320,0,37071,Rayne R Reitnauer,David Mark Maloney,R,David Mark Maloney,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),David Maloney,Reelected,R
+2024,house,131,17570,23514,0,41084,Meriam H Sabih,V. Milou Mackenzie,R,V. Milou Mackenzie,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Milou Mackenzie,Reelected,R
+2024,house,132,26659,0,0,26659,Michael Harry Schlossberg,,D,Michael Harry Schlossberg,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Schlossberg,Reelected,D
+2024,house,133,24035,0,0,24035,Jeanne M Mcneill,,D,Jeanne M Mcneill,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jeanne McNeill,Reelected,D
+2024,house,134,19124,0,0,19124,Peter George Schweyer,,D,Peter George Schweyer,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Peter Schweyer,Reelected,D
+2024,house,135,22656,0,0,22656,Stephen P Samuelson,,D,Stephen P Samuelson,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Steve Samuelson,Reelected,D
+2024,house,136,19607,0,0,19607,Robert Freeman,,D,Robert Freeman,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Robert L. Freeman,Reelected,D
+2024,house,137,19169,20485,0,39654,Anna R Thomas,Joseph T. Emrick,R,Joseph T. Emrick,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Emrick,Reelected,R
+2024,house,138,13747,25791,0,39538,Jared Peter Bitting,Ann L Flood,R,Ann L Flood,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ann Flood,Reelected,R
+2024,house,139,12701,26234,0,38935,Robin Schooley Skibber,Jeffrey H Olsommer,R,Jeffrey H Olsommer,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jeffrey Olsommer,Reelected,R
+2024,house,140,17587,14959,0,32546,James Prokopiak,Candace R Cabanas,D,James Prokopiak,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jim Prokopiak,Reelected,D
+2024,house,141,20960,11345,0,32305,Tina Davis,Noah Jesse Boyd,D,Tina Davis,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tina Davis,Reelected,D
+2024,house,142,17493,21226,0,38719,Anna K Payne,Joseph F Hogan Iv,R,Joseph F Hogan Iv,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Hogan,Reelected,R
+2024,house,143,18866,24370,0,43236,Eleanor M Breslin,Shelby E. Labs,R,Shelby E. Labs,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Shelby Labs,Reelected,R
+2024,house,144,20553,19488,0,40041,Brian Munroe,Daniel J Mcphillips,D,Brian Munroe,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Brian Munroe,Reelected,D
+2024,house,145,15821,22678,0,38499,Vera J Cole,Craig T. Staats,R,Craig T. Staats,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Craig Staats,Reelected,R
+2024,house,146,20726,14233,0,34959,Joseph Ciresi,Michael J. Mccloskey Iii,D,Joseph Ciresi,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Ciresi,Reelected,D
+2024,house,147,16835,23792,0,40627,Albert Leach,Donna Marie Scheuren,R,Donna Marie Scheuren,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Donna Scheuren,Reelected,R
+2024,house,148,34119,0,0,34119,Mary Josephine Daley,,D,Mary Josephine Daley,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mary Jo Daley,Reelected,D
+2024,house,149,30339,0,0,30339,Timothy P. Briggs,,D,Timothy P. Briggs,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tim Briggs,Reelected,D
+2024,house,150,22359,15624,0,37983,Joseph G Webster,Simone H Collins,D,Joseph G Webster,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Webster,Reelected,D
+2024,house,151,24975,15672,0,40647,Melissa Cerrato,Allen Arthur Anderson,D,Melissa Cerrato,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Melissa Cerrato,Reelected,D
+2024,house,152,21583,13699,0,35282,Nancy Guenst,Tim Bertman,D,Nancy Guenst,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Nancy Guenst,Reelected,D
+2024,house,153,25739,13427,0,39166,Benjamin V. Sanchez,Joseph J Rooney,D,Benjamin V. Sanchez,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ben Sanchez,Reelected,D
+2024,house,154,31179,7648,0,38827,Napoleon J Nelson,Thom Estilow,D,Napoleon J Nelson,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Napoleon Nelson,Reelected,D
+2024,house,155,23362,17396,0,40758,Danielle Friel Otten,Rodney D Simon Ii,D,Danielle Friel Otten,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Danielle Friel Otten,Reelected,D
+2024,house,156,22786,16059,0,38845,Christopher Pielli,Kris R Vollrath,D,Christopher Pielli,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Chris Pielli,Reelected,D
+2024,house,157,25141,16408,0,41549,Melissa Shusterman,Regina M Mauro,D,Melissa Shusterman,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Melissa Shusterman,Reelected,D
+2024,house,158,22052,15983,0,38035,Christina D Sappey,Tina Louise Ayala,D,Christina D Sappey,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Christina Sappey,Reelected,D
+2024,house,159,20161,0,0,20161,Carol Kazeem,,D,Carol Kazeem,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Carol Kazeem,Reelected,D
+2024,house,160,20313,21834,0,42147,Elizabeth Rhein Moro,Wendell Craig Williams,R,Wendell Craig Williams,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Craig Williams,Reelected,R
+2024,house,161,22393,16084,0,38477,Leanne T. Krueger,John Albert Mancinelli Jr.,D,Leanne T. Krueger,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Leanne Krueger,Reelected,D
+2024,house,162,19815,15143,0,34958,David M Delloso,Gabriella M. Mendez,D,David M Delloso,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),David Delloso,Reelected,D
+2024,house,163,21022,12238,0,33260,Heather Boyd,Jeffrey O Jones,D,Heather Boyd,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Heather Boyd,Reelected,D
+2024,house,164,21017,0,0,21017,Gina Curry,,D,Gina Curry,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Gina Curry,Reelected,D
+2024,house,165,24659,16730,0,41389,Jennifer O'Mara,Elizabeth L Piazza,D,Jennifer O'Mara,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jennifer O'Mara,Reelected,D
+2024,house,166,25233,16565,0,41798,Gregory Vitali,Kimberly C Dugery,D,Gregory Vitali,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Greg Vitali,Reelected,D
+2024,house,167,23301,16484,0,39785,Kristine C. Howard,Melissa C Dicranian,D,Kristine C. Howard,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kristine Howard,Reelected,D
+2024,house,168,22634,16326,0,38960,Lisa Anne Borowski,Kathryn M L Buckley,D,Lisa Anne Borowski,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Lisa Borowski,Reelected,D
+2024,house,169,0,30234,0,30234,,Kate Anne Klunk,R,Kate Anne Klunk,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kate Klunk,Reelected,R
+2024,house,170,0,19768,0,19768,,Martina A White,R,Martina A White,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Martina White,Reelected,R
+2024,house,171,0,28501,0,28501,,Kerry A. Benninghoff,R,Kerry A. Benninghoff,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kerry Benninghoff,Reelected,R
+2024,house,172,12836,12340,0,25176,Sean Michael Dougherty,Aizaz Gill,D,Sean Michael Dougherty,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kevin J. Boyle,Lost Primary,D
+2024,house,173,13374,0,0,13374,Patrick L Gallagher,,D,Patrick L Gallagher,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Patrick Gallagher,Reelected,D
+2024,house,174,15011,0,0,15011,Ed Neilson,,D,Ed Neilson,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ed Neilson,Reelected,D
+2024,house,175,29976,0,0,29976,Marylouise Isaacson,,D,Marylouise Isaacson,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mary Isaacson,Reelected,D
+2024,house,176,12576,21429,0,34005,Hope E Christman,Jack B Rader Jr,R,Jack B Rader Jr,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jack Rader,Reelected,R
+2024,house,177,17234,0,0,17234,Joseph C Hohenstein,,D,Joseph C Hohenstein,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joseph C. Hohenstein,Reelected,D
+2024,house,178,16939,26864,0,43803,Paul G Lang Jr,Kristin Marcell,R,Kristin Marcell,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kristin Marcell,Reelected,R
+2024,house,179,14583,0,0,14583,Jason Dawkins,,D,Jason Dawkins,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jason Dawkins,Reelected,D
+2024,house,180,11487,0,0,11487,Jose A Giral,,D,Jose A Giral,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jose Giral,Reelected,D
+2024,house,181,23165,0,0,23165,Malcolm Kenyatta,,D,Malcolm Kenyatta,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Malcolm Kenyatta,Reelected,D
+2024,house,182,32994,0,0,32994,Benjamin R. Waxman,,D,Benjamin R. Waxman,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ben Waxman,Reelected,D
+2024,house,183,13503,25688,0,39191,Joseph William Lenzi,Zachary Allen Mako,R,Zachary Allen Mako,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Zach Mako,Reelected,R
+2024,house,184,20306,0,0,20306,Elizabeth A. Fiedler,,D,Elizabeth A. Fiedler,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Elizabeth Fiedler,Reelected,D
+2024,house,185,19366,0,0,19366,Regina G Young,,D,Regina G Young,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Regina Young,Reelected,D
+2024,house,186,27658,0,0,27658,Jordan Harris,,D,Jordan Harris,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jordan A. Harris,Reelected,D
+2024,house,187,17738,21994,0,39732,Stefanie Rafes,Gary W Day,R,Gary W Day,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Ryan Mackenzie,Retired (Ran for U.S. House),R
+2024,house,188,26408,0,0,26408,Rick C Krajewski,,D,Rick C Krajewski,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Rick Krajewski,Reelected,D
+2024,house,189,16970,12542,0,29512,Tarah Probst,Lisa M Vanwhy,D,Tarah Probst,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tarah Probst,Reelected,D
+2024,house,190,24492,0,0,24492,Gwendolyn Veronica Green,,D,Gwendolyn Veronica Green,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),G. Roni Green,Reelected,D
+2024,house,191,23939,0,0,23939,Joanna Elizabeth Mcclinton,,D,Joanna Elizabeth Mcclinton,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joanna E. McClinton,Reelected,D
+2024,house,192,26635,0,0,26635,Morgan Beth Cephas,,D,Morgan Beth Cephas,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Morgan Cephas,Reelected,D
+2024,house,193,0,27826,0,27826,,Torren C Ecker,R,Torren C Ecker,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Torren Ecker,Reelected,R
+2024,house,194,29784,0,0,29784,Tarik Khan,,D,Tarik Khan,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Tarik Khan,Reelected,D
+2024,house,195,26653,0,0,26653,Keith S Harris,,D,Keith S Harris,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Keith Harris,Reelected,D
+2024,house,196,0,30637,0,30637,,Seth Michael Grove,R,Seth Michael Grove,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Seth Grove,Reelected,R
+2024,house,197,16952,0,0,16952,Danilo Burgos,,D,Danilo Burgos,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Danilo Burgos,Reelected,D
+2024,house,198,23842,0,0,23842,Darisha K. Parker,,D,Darisha K. Parker,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Darisha Parker,Reelected,D
+2024,house,199,13447,20935,0,34382,Richard E Christie Jr,Barbara Gleim,R,Barbara Gleim,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Barbara Gleim,Reelected,R
+2024,house,200,35743,0,0,35743,Christopher M Rabb,,D,Christopher M Rabb,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Chris Rabb,Reelected,D
+2024,house,201,26154,0,0,26154,Andre Donte Carroll,,D,Andre Donte Carroll,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Andre Carroll,Reelected,D
+2024,house,202,10586,0,0,10586,Jared G Solomon,,D,Jared G Solomon,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jared Solomon,Reelected,D
+2024,house,203,17389,0,0,17389,Anthony A. Bellmon,,D,Anthony A. Bellmon,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Anthony A. Bellmon,Reelected,D
+2024,senate,1,109193,0,0,109193,Nikil Saval,,D,Nikil Saval,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Nikil Saval,Re-elected,D
+2024,senate,3,90329,0,0,90329,Sharif T Street,,D,Sharif T Street,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Sharif Street,Re-elected,D
+2024,senate,5,49735,50570,0,100305,James Dillon,Joseph Samuel Picozzi,R,Joseph Samuel Picozzi,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jimmy Dillon,Defeated,R
+2024,senate,7,113010,0,0,113010,Vincent James Hughes,,D,Vincent James Hughes,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Vincent Hughes,Re-elected,D
+2024,senate,9,81550,63796,0,145346,John I Kane,Michael Allan Woodin,D,John I Kane,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),John I. Kane,Re-elected,D
+2024,senate,11,63935,45000,0,108935,Judith S Schwank,Lisha L Rowe,D,Judith S Schwank,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Judy Schwank,Re-elected,D
+2024,senate,13,48634,72381,0,121015,Winfred Trexler Proffitt Jr,Scott Martin,R,Scott Martin,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Scott Martin,Re-elected,R
+2024,senate,15,77181,55379,0,132560,Patricia H Kim,Dominic D Difrancesco Ii,D,Patricia H Kim,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),John DiSanto,Retired,D
+2024,senate,17,100630,46514,0,147144,Amanda Marie Cappelletti,Gregory Harris,D,Amanda Marie Cappelletti,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Amanda Cappelletti,Re-elected,D
+2024,senate,19,84630,65120,0,149750,Carolyn T Comitta,Duane Milne,D,Carolyn T Comitta,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Carolyn Comitta,Re-elected,D
+2024,senate,21,0,115628,0,115628,,Scott E Hutchinson,R,Scott E Hutchinson,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Scott Hutchinson,Re-elected,R
+2024,senate,23,34135,100537,0,134672,Kim Pitcher,Emerson Eugene Yaw,R,Emerson Eugene Yaw,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Eugene Yaw,Re-elected,R
+2024,senate,25,44514,88083,0,132597,William L Mcgill,Cris Dush,R,Cris Dush,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Cris Dush,Re-elected,R
+2024,senate,27,36359,93980,0,130339,Patricia Lea Lawton,Lynda J. Schlegel Culver,R,Lynda J. Schlegel Culver,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Lynda Schlegel Culver,Re-elected,R
+2024,senate,29,31626,86225,3601,121452,John N Zugarek,David G. Argall,R,David G. Argall,False,3,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dave Argall,Re-elected,R
+2024,senate,31,52109,80963,0,133072,Mark Joseph Temons Ii,Dawn Wetzel Keefer,R,Dawn Wetzel Keefer,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Mike Regan,Retired,R
+2024,senate,33,44016,98071,0,142087,Cameron Schroy,Douglas V Mastriano,R,Douglas V Mastriano,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Doug Mastriano,Re-elected,R
+2024,senate,35,0,110889,0,110889,,Wayne Langerholc Jr.,R,Wayne Langerholc Jr.,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Wayne Langerholc,Re-elected,R
+2024,senate,37,71275,79826,0,151101,Nicole Stoicovy-Ruscitto,Devlin J Robinson,R,Devlin J Robinson,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Devlin Robinson,Re-elected,R
+2024,senate,39,0,122605,0,122605,,Kim Ward,R,Kim Ward,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Kim Ward,Re-elected,R
+2024,senate,41,0,111778,0,111778,,Joseph A Pittman,R,Joseph A Pittman,True,1,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Joe Pittman,Re-elected,R
+2024,senate,43,116722,0,0,116722,Jay Costa Jr,,D,Jay Costa Jr,True,1,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jay Costa,Re-elected,D
+2024,senate,45,69248,61189,0,130437,Nickolas R Pisciottano,Jennifer Dintini,D,Nickolas R Pisciottano,False,2,D,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Jim Brewster,Retired,D
+2024,senate,47,54987,96879,0,151866,Kathleen C Lennen,Elder A Vogel Jr.,R,Elder A Vogel Jr.,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Elder Vogel,Re-elected,R
+2024,senate,49,60457,71293,0,131750,Robert James Wertz Jr,Daniel J Laughlin,R,Daniel J Laughlin,False,2,R,2022_LRC,PA DoS precinct returns (pa.gov bulk data),Dan Laughlin,Re-elected,R

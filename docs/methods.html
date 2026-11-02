@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methods: PA Election Night</title>
+<meta name="description" content="How the Pennsylvania election-night tracker turns unofficial county returns into seat estimates: data source, matched-ballot benchmark, prior blend, uncertainty floors, call rule and caveats.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">PA Legislature: Election Night</a>
+  <nav><a href="index.html">Senate</a><a href="house.html">House</a><a href="methods.html" class="active">Methods</a></nav>
+</header>
+<main class="methods">
+  <h1>How the tracker works</h1>
+  <p class="sub">Everything on this site is computed from public data by a model described here. Nothing is a call. The code runs the same way in the browser and in the poller that publishes the data.</p>
+
+  <h2>Data source</h2>
+  <p>The Pennsylvania Department of State posts unofficial returns at electionreturns.pa.gov as counties report. The site's own data interface returns, for every contest, the vote for each candidate in each county split into Election Day, mail-in (including absentee) and provisional ballots, plus the share of precincts reporting in each county. A poller reads a full snapshot every three minutes and publishes it here unchanged in <code>data/returns.json</code>. When a number is unknown the page says "no returns yet" rather than showing a placeholder.</p>
+  <p>The statewide "precincts reporting" figure the Department publishes counts in-person reporting only. It says nothing about how much of the mail vote a county has counted. That is the central problem on a Pennsylvania election night, and the tracker is built around it.</p>
+
+  <h2>Expected vote, by county and method</h2>
+  <p>For each seat the tracker needs to know how many votes to expect from each county, and how many of those will be Election Day, mail and provisional. It starts from the 2024 presidential vote in the district's part of each county (from the Department's precinct-level returns), splits it by method using that county's 2024 method mix for each party, and scales each method by the ratio of the county's 2022 governor vote to its 2024 presidential vote. In short: a midterm electorate the size of 2022 with the geography of 2024.</p>
+  <p>Those expectations are revised live. Once a county reports 95 percent or more of its precincts, its in-person total replaces the expectation, and the ratio of actual to expected in-person vote is applied to that county's mail and provisional expectations too, and pooled across counties for those that have not finished. If the Department's daily mail ballot report has been loaded, the ballots returned in each county pin the county's expected mail vote; without it the mail expectation carries a wide uncertainty (±60 percent), because the method mix is the thing most likely to differ from past elections.</p>
+
+  <h2>Matched-ballot benchmark</h2>
+  <p>Early returns are skewed by which counties count which ballots first. A batch of Philadelphia mail ballots is very Democratic; a batch of rural Election Day ballots is very Republican. Neither tells you much about the final result on its own. The tracker therefore never compares reported votes with the district as a whole. It compares each county's reported votes, method by method, with what 2024 produced in that county for that method. The difference is a swing. Swings are pooled across the counties and methods that have reported, weighted by matched two-party votes, and applied to the vote still outstanding in every county and method. A county that has reported a lot keeps more of its own swing; one that has barely reported inherits the pooled swing. Where a county reports totals without a method split, its swing is measured against the county's expected composite share and given about a third of the weight, and the uncertainty is raised.</p>
+  <p>Before any votes are in, the pooled swing defaults to what the pre-election forecast implied relative to the same 2024 benchmark, with a small pseudo-weight (2 percent of expected vote) so that the first few hundred votes cannot swing it.</p>
+
+  <h2>The prior and the blend</h2>
+  <p>Every seat starts from the pre-election forecast's mean margin and district standard deviation. The returns-based estimate above is blended with that prior by precision, but with a hard cap on the weight the returns can get: 10 percent with nothing counted, 35 percent at a quarter of the expected vote, 85 percent at 60 percent counted, and the full weight only at 90 percent. So the prior carries most of the weight below a quarter of the vote and the returns dominate only past roughly 60 percent. Seats with no major-party opponent are held at the forecast's fixed probability and labeled "fixed".</p>
+
+  <h2>Uncertainty floors</h2>
+  <p>The returns estimate's standard deviation combines: the uncertainty of the pooled swing, which starts at 8 points and falls as matched vote comes in; a size term for every outstanding bucket of votes, proportional to how much its projected margin differs from what has been counted (20 percent of the bucket for in-person vote with precincts known, 60 percent for mail without a ballots-returned figure, 6 percent with one); a term for counties that have reported zero precincts; a term for mail ballots requested but not yet counted when that file is loaded; and half a point for late corrections. After the blend the standard deviation cannot fall below 4 points until half the expected vote is in, then the floor declines to 0.75 points at a full count.</p>
+
+  <h2>Damping and the "early returns" flag</h2>
+  <p>The displayed estimate moves halfway from its previous value toward the newly computed one at each refresh, so a change is spread over two to three cycles. If the computed estimate for a seat moves more than 5 points in one cycle, the seat shows an "early returns, expect swings" label for the next 15 minutes.</p>
+
+  <h2>Status labels and the call rule</h2>
+  <p>A seat is "leaning" at 80 percent, "likely" at 95 percent, and "called by the tracker" only above 99 percent with at least 90 percent of the expected vote counted, the returns carrying at least 85 percent of the blend, and the counted votes agreeing in direction with the projection. A seat is never called on the prior alone. These are the tracker's estimates and labels, not official calls; official results are certified weeks later.</p>
+
+  <h2>Chamber odds</h2>
+  <p>The probability of each party's majority is computed from the seat probabilities by a Poisson-binomial distribution, adding the seats that are not up this year (Senate: 10 Democratic and 15 Republican holdovers; 26 is a majority). The independent candidate in the 46th district counts for neither party, so "no majority" includes a 25–25 chamber and an independent holding the balance. The pre-election forecast's chamber odds, shown for reference before returns arrive, came from simulations with shared statewide and regional shocks; the tracker's seat-by-seat combination treats seats as independent, which understates the chance of a sweep in either direction early in the night.</p>
+
+  <h2>Caveats</h2>
+  <ul>
+    <li>Returns are unofficial county-level figures as posted by the Department of State, with the Department's own lags and corrections. Counties post to their own sites first; the tracker does not read those, though a manual override exists for the operator to type in county figures.</li>
+    <li>The method mix is uncertain. The tracker assumes 2022's mail share per county unless the mail ballot report is loaded. In the 2024 replay used to test the model, a wrong assumption about the mail share was the single largest source of error, which is why mail buckets carry wide uncertainty.</li>
+    <li>Seats are treated as independent when the chamber odds are combined. A statewide surprise moves many seats together, so real uncertainty about control is larger than shown while most of the vote is outstanding.</li>
+    <li>Expected votes rest on 2024 precinct geography. Where a county's portion of a district is small, the expectation is noisy.</li>
+    <li>Write-ins are not itemised by the Department and are not in these figures.</li>
+  </ul>
+
+  <h2>Testing</h2>
+  <p>The model was replayed on the 2024 general election for the 25 odd-numbered Senate seats, releasing the real county-by-method results in an assumed order (suburban mail first, Philadelphia and Allegheny mail late), with priors reconstructed from pre-2024 data only. Displayed estimates finished within half a point of every actual result, never moved more than 1.6 points in one cycle, and produced no wrong calls. The code for the model, the poller and this page is in the repository linked in the footer.</p>
+</main>
+<footer>Data: Pennsylvania Department of State. Source code and data files: see the repository that publishes this page.</footer>
+</body>
+</html>

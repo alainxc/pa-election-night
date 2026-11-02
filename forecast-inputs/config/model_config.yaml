@@ -1,0 +1,310 @@
+# =====================================================================
+# PA General Assembly 2026 Forecast — MODEL CONFIGURATION
+# =====================================================================
+# Every weight, prior, and assumption used by the model lives in this
+# file. The pipeline reads it on every run; nothing is hard-coded.
+# All margins are DEMOCRATIC two-party margins in percentage points
+# (positive = Democrat ahead). "Lean" = district margin minus the
+# statewide margin in the same race.
+#
+# Units cheat-sheet:   pts = percentage points of two-party margin
+#                      prob = probability 0..1
+# =====================================================================
+
+election:
+  date: "2026-11-03"
+  cycle: 2026
+  house_seats: 203
+  house_majority: 102
+  senate_seats_total: 50
+  senate_majority: 26
+  # Senate seats up in 2026 are the EVEN-numbered districts (last elected 2022;
+  # odd districts were elected in 2024 and hold over).
+  senate_up: [2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50]
+  # Party now holding each seat (used for "flip" lists and holdovers)
+  # is read from data/processed/current_holders.csv, built by the
+  # pipeline from the 2024 (House, even Senate) and 2022 (odd Senate)
+  # results plus any special elections listed under `specials` below.
+  # 2026 special elections (sources: PA DoS, Ballotpedia; see data/raw/ratings/NOTES.md).
+  # The candidates file's incumbent_party already reflects these; listed here for the record.
+  specials:
+    - {chamber: house, district: 12, winner_party: D, date: "2026-08-18", note: "Dukes (D) flips Trump+18 seat; House becomes 103-100 D"}
+    - {chamber: house, district: 22, winner_party: D, date: "2026", note: "D hold"}
+    - {chamber: house, district: 42, winner_party: D, date: "2026", note: "D hold"}
+    - {chamber: house, district: 79, winner_party: R, date: "2026", note: "R hold"}
+    - {chamber: house, district: 193, winner_party: R, date: "2026", note: "R hold"}
+    - {chamber: house, district: 196, winner_party: R, date: "2026", note: "R hold"}
+
+# ---------------------------------------------------------------------
+# 1. DISTRICT BASELINE  (partisan lean on current lines)
+# ---------------------------------------------------------------------
+baseline:
+  # Weighted average of district leans (district margin minus statewide
+  # margin) across reference races. Weights are renormalised over the
+  # races that actually have data for a district.
+  lean_weights:
+    pres_2024: 0.45     # most recent, highest turnout, best proxy for 2026 coalition
+    gov_2022:  0.20     # Shapiro's 2022 coalition — relevant because he tops the 2026 ticket
+    sen_2022:  0.20     # Fetterman/Oz — a "generic-ish" midterm race
+    pres_2020: 0.15     # older; included to damp single-race noise
+  # Statewide two-party Dem margins for the same races (used to convert
+  # district shares to leans). Filled from actual_statewide.csv when present;
+  # these are fallbacks and are overwritten by data.
+  statewide_margin_fallback:
+    pres_2024: -1.71
+    gov_2022:  14.80
+    sen_2022:   4.93
+    pres_2020:  1.17
+  # Blend the lean-based estimate with the district's own most recent
+  # legislative result (expressed as a lean vs that year's statewide
+  # legislative environment). Legislative results carry candidate-specific
+  # information but are noisier and often uncontested.
+  legislative_result_weight: 0.30   # 0 = ignore past legislative result; 1 = use only it
+  # Past legislative result is ignored when that race was uncontested or
+  # the winner's margin exceeded this (effectively uncontested).
+  legislative_result_max_margin: 60
+  # Statewide "legislative environment" implied by the aggregate of all
+  # contested legislative races in that year, computed from data; the
+  # fallback is used only if the computation fails.
+  legislative_environment_fallback:
+    2022: 1.5
+    2024: -1.0
+
+# ---------------------------------------------------------------------
+# 2. CANDIDATE LAYER
+# ---------------------------------------------------------------------
+candidates:
+  incumbency_advantage_pts: 2.8     # literature on 2010s-2020s state legislatures: ~2-4 pts and shrinking
+  # An incumbent's over-/under-performance vs their district's lean in
+  # their last race, shrunk toward zero and carried forward.
+  prior_performance_carryover: 0.35 # fraction of past over-performance that persists
+  prior_performance_cap_pts: 6.0    # cap on carried-over over-performance
+  # Campaign finance: effect per unit of log10(D receipts / R receipts),
+  # computed on cycle-to-date receipts, floored at $1,000 each side.
+  finance_pts_per_log10_ratio: 1.6
+  finance_cap_pts: 4.0
+  # Receipts below this are treated as "no data" (committee-matching gaps in
+  # the DoS export show up as $0 for candidates who clearly raised money).
+  finance_min_receipts_for_signal: 1000
+  # Committee matches flagged match_confidence=low in finance_2026.csv
+  # (surname-only rules) are ignored entirely; see data/raw/finance/NOTES.md.
+  # Most finance figures are as of the 30-day post-primary report (June 2026);
+  # the Sept 22 pre-election reports were only partly in the DoS export on Oct 9.
+  # Where finance data is missing for either side, assume parity (0 effect).
+  # Candidate-quality adjustment: manual, documented overrides, in pts.
+  # Format: {chamber: house, district: 12, adjustment_pts: -1.5, reason: "..."}
+  quality_overrides: []
+  # Target-list signal: being on a caucus/national committee target list
+  # is treated as evidence of a credible, funded challenger (pulls margin
+  # toward 0) and of spending. Applied once per side regardless of how
+  # many lists name the seat.
+  target_list_pts_toward_zero: 0.75
+  target_list_max_lists_counted: 2
+  # Independent challengers: when one major party has no nominee but an
+  # independent / third-party candidate is on the ballot against the other
+  # party's nominee, the independent is modelled as the challenger. Their
+  # expected margin starts from what a generic candidate of the MISSING party
+  # would get (district lean + environment + opponent's incumbency) minus a
+  # penalty for having no party infrastructure; district polls then enter
+  # directly (independent minus major-party share). An independent win counts
+  # for neither party's majority. 2026 cases: SD-46 (Borello vs Bartolotta),
+  # HD-145 (Prendergast vs Staats).
+  independent_challenger:
+    enabled: true
+    baseline_penalty_pts: 6.0      # Osborn-style independents in 2024 ran ~5-8 pts behind what a generic D would in deep-red seats... before polls
+    extra_sd_pts: 3.0              # much less history to lean on
+  # Uncontested seats
+  uncontested_win_prob: 0.995       # leaves room for write-in upsets (rare but not zero)
+  # If no candidate from a party appears in the data AND the seat is
+  # not flagged uncontested, treat the missing side as a nominal
+  # candidate with a penalty (e.g., late write-in, minor-party-only).
+  missing_candidate_penalty_pts: 8.0
+
+# ---------------------------------------------------------------------
+# 3. ENVIRONMENT LAYER (statewide swing)
+# ---------------------------------------------------------------------
+environment:
+  # Statewide 2024 presidential two-party margin is the anchor; the
+  # model forecasts a statewide "generic legislative" margin for 2026 and
+  # applies (forecast - anchor) as a uniform swing to every district's
+  # 2024-anchored baseline.
+  anchor_race: pres_2024
+  # --- Structural prior (before polls) ---
+  # Midterm penalty for the president's party: average House popular-vote
+  # swing against the White House party in midterms since 1946 is ~ -5 pts
+  # relative to the prior presidential vote. PA is slightly more elastic
+  # than average, but legislative races are less nationalised than
+  # congressional races.
+  prior:
+    presidents_party: R
+    midterm_swing_pts_toward_out_party: 4.0
+    prior_sd_pts: 4.5          # how uncertain the structural prior is
+    # The prior's weight in the final blend is expressed as an
+    # equivalent number of "effective poll respondents".
+    prior_effective_n: 1500
+  # --- Poll averaging ---
+  polls:
+    half_life_days: 14           # recency: weight halves every 14 days
+    max_age_days: 90             # polls older than this are dropped
+    sample_size_exponent: 0.5    # weight ∝ n^0.5 (standard; damps giant online panels)
+    reference_sample_size: 600
+    # Pollster-rating multipliers keyed by letter grade (Silver Bulletin /
+    # 538-style). Unknown pollsters get the "unrated" value.
+    rating_multiplier:
+      "A+": 1.30
+      "A":  1.20
+      "A-": 1.10
+      "A/B": 1.05
+      "B+": 1.00
+      "B":  0.90
+      "B-": 0.80
+      "B/C": 0.75
+      "C+": 0.70
+      "C":  0.60
+      "C-": 0.50
+      "C/D": 0.45
+      "D":  0.35
+      unrated: 0.65
+    # Partisan sponsorship: weight multiplier and a bias correction
+    # applied AGAINST the sponsor (D-sponsored polls shifted toward R).
+    partisan_weight_multiplier: 0.50
+    partisan_bias_correction_pts: 2.0
+    # Likely-voter vs registered-voter adjustment (RV polls historically
+    # lean ~1-2 pts more Democratic than LV in the same race).
+    population_adjustment_pts: {LV: 0.0, RV: -1.0, A: -1.5}
+    # Same-pollster down-weighting: a pollster's k-th most recent poll is
+    # weighted by this factor^(k-1) so one prolific pollster can't
+    # dominate.
+    same_pollster_decay: 0.5
+  # --- Converting each poll type into a "generic PA legislative" margin ---
+  # Each source produces an estimate of the statewide generic Dem margin.
+  # They are then combined by these weights (renormalised over sources
+  # that actually have polls).
+  source_weights:
+    pa_generic_ballot: 0.40           # a true PA *legislative* generic ballot; none published so far in 2026
+    pa_congressional_generic: 0.30    # PA voters' U.S. House preference (Quinnipiac, F&M): PA-specific but congressional
+    pa_governor: 0.25                 # Shapiro over-performs a generic D; see pass_through
+    national_generic_ballot: 0.25
+    shapiro_approval: 0.10
+  # PA congressional generic -> PA legislative generic: same pass-through
+  # logic as the national generic (legislative races are less nationalised)
+  pa_congressional_pass_through: 0.80
+  # Governor race → generic: generic_margin = pres_2024_margin
+  #   + governor_pass_through * (gov_poll_margin - gov_expected_personal_margin ...)
+  # Simplified: the generic margin is inferred as
+  #   gov_margin - governor_personal_vote_pts, with pass_through damping
+  #   the signal because incumbent governors' coattails are weak.
+  governor_personal_vote_pts: 10.0   # Shapiro's expected over-performance vs a generic Dem (2022: won by 15.0 while Fetterman won by 5.0 on the same ballot)
+  governor_pass_through: 0.50
+  # National generic → PA generic: PA partisan lean relative to the nation
+  # (PA pres margin minus national pres margin, 2024: -1.7 - (-1.5) = -0.2)
+  pa_lean_vs_nation_pts: -0.2
+  national_pass_through: 0.80        # state legislative races are less nationalised
+  # Shapiro approval → generic: net approval is converted with a slope
+  # and intercept estimated loosely from governor-approval vs down-ballot
+  # results (weak signal; low weight above).
+  approval_slope: 0.15
+  approval_intercept_pts: -4.0
+  # Legislative candidates as a class under-run the top of the ticket:
+  # historical PA generic legislative vote vs presidential/gov margins.
+  # Positive = Dems do better in legislative races than the statewide
+  # anchor implies. Set from 2022/2024 computation; fallback here.
+  legislative_vs_anchor_offset_pts: 0.0
+
+# ---------------------------------------------------------------------
+# 4. DISTRICT POLLS
+# ---------------------------------------------------------------------
+district_polls:
+  half_life_days: 21
+  max_age_days: 120
+  internal_weight_multiplier: 0.40     # internals are released selectively
+  internal_bias_correction_pts: 3.5    # released internals historically overstate sponsor by ~3-5 pts
+  # Blend weight of the district poll average vs fundamentals:
+  #   w_polls = n_eff / (n_eff + k)   where n_eff = weighted sum of sample sizes
+  blend_k: 900                         # with one 500-person poll, polls get 36%; three -> 62%
+  # For independent challengers the D-vs-R fundamentals say little, so polls
+  # carry more weight: a 1,200-person poll gets 80% instead of 57%.
+  blend_k_independent: 300
+  # Additional error for small-district polls (legislative polls are
+  # harder; add to the poll SD in the blend)
+  extra_poll_sd_pts: 4.0
+
+# ---------------------------------------------------------------------
+# 5. EXTERNAL RATINGS AS PRIORS
+# ---------------------------------------------------------------------
+external_ratings:
+  # Rating → implied Dem win probability
+  rating_to_prob:
+    "Safe D":   0.98
+    "Likely D": 0.88
+    "Lean D":   0.74
+    "Tilt D":   0.60
+    "Toss-up":  0.50
+    "Tilt R":   0.40
+    "Lean R":   0.26
+    "Likely R": 0.12
+    "Safe R":   0.02
+  # The implied probability is converted into a margin using the model's
+  # own district error SD, then blended into the fundamentals mean.
+  # Weights are per source; total external weight is capped.
+  source_weights:
+    state_navigate: 0.25      # the only seat-by-seat PA rater in 2026 (CNalysis rebranded as State Navigate); its published win probability is used when available
+    sabato:         0.15      # Crystal Ball publishes chamber-level ratings only for PA; included in case seat ratings appear
+    ballotpedia:    0.08      # Ballotpedia only flags "battleground" (treated as Toss-up)
+    other:          0.05
+  total_weight_cap: 0.35
+  # Ballotpedia battleground flag → treated as this rating
+  ballotpedia_battleground_as: "Toss-up"
+  # Ratings older than this many days are ignored
+  max_age_days: 120
+
+# ---------------------------------------------------------------------
+# 6. SIMULATION
+# ---------------------------------------------------------------------
+simulation:
+  n_sims: 40000
+  seed: 20261103
+  # Error components (SD in pts of two-party margin). Total district
+  # error for a typical seat ≈ sqrt(3.0² + 2.2² + 6.5²) ≈ 7.5 pts, in
+  # line with state-legislative fundamentals-model errors (~7-9 pts).
+  # Backtest margin MAE was 5.4 (2022) and 5.2 (2024) with 90% coverage 90%/96%.
+  statewide_sd_pts: 3.5          # polling/environment miss shared by all seats. Backtests: 2022 miss +2.7, 2024 miss -4.3 (lean-adjusted)
+  regional_sd_pts: 2.2           # shared by seats in the same region
+  district_sd_pts: 6.5           # idiosyncratic
+  # Fat tails: statewide and regional shocks drawn from Student-t
+  statewide_t_df: 5
+  regional_t_df: 8
+  # Open seats and seats without a recent contested result are noisier
+  open_seat_extra_sd_pts: 1.5
+  no_recent_result_extra_sd_pts: 1.0
+  # Extra statewide uncertainty per week remaining until the election
+  # (polls move). Added in quadrature: sd_extra = per_week * weeks_left.
+  statewide_sd_per_week_remaining: 0.35
+  regions: [philadelphia, collar, lehigh_valley, pittsburgh_metro, central, northeast, northwest]
+
+# ---------------------------------------------------------------------
+# 7. MARKETS (cross-check only — NEVER an input)
+# ---------------------------------------------------------------------
+markets:
+  use_as_input: false
+  show_on_methodology_page: true
+
+# ---------------------------------------------------------------------
+# 9. BACKTEST
+# ---------------------------------------------------------------------
+backtest:
+  cycles: [2022, 2024]
+  # Freeze date: only polls ending on/before this date are used.
+  freeze_days_before_election: 3
+  # For 2022 the current map was new; baseline uses pres_2020 (and
+  # gov/sen 2018 where available). Lean weights below override the main
+  # ones for each backtest cycle.
+  lean_weights:
+    2022: {pres_2020: 1.0}
+    2024: {pres_2020: 0.45, gov_2022: 0.275, sen_2022: 0.275}
+  anchor_race:
+    2022: pres_2020
+    2024: pres_2020
+  presidents_party:
+    2022: D
+    2024: D      # presidential year: no midterm prior applied
