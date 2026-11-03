@@ -1,0 +1,79 @@
+name: Election night poller
+# Runs poll.py in the cloud so no laptop has to stay awake. Start it from the
+# Actions tab (or the GitHub mobile app): "Run workflow". It waits until
+# start_at, then polls both chambers every `interval` seconds, commits the data
+# files and triggers the Pages deploy. A job may run at most 6 hours, so it
+# exits after ~5h40m and starts a fresh copy of itself while chain_until has not
+# passed. Cancel the run (Actions tab / mobile app) to stop.
+on:
+  workflow_dispatch:
+    inputs:
+      start_at:
+        description: "ISO time to begin polling (blank = now)"
+        default: "2026-11-03T20:00:00-05:00"
+      interval:
+        description: "seconds between cycles"
+        default: "180"
+      chain_until:
+        description: "keep re-launching until this UTC time (blank = do not chain)"
+        default: "2026-11-04T12:00:00+00:00"
+      once:
+        description: "test: one fetch, no push"
+        type: boolean
+        default: false
+  schedule:
+    # 7:45 pm Eastern on Nov 3 (00:45 UTC Nov 4); the poller itself waits for 8 pm.
+    - cron: "45 0 4 11 *"
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: poller
+  cancel-in-progress: false
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      GH_TOKEN: ${{ github.token }}
+      START_AT: ${{ github.event_name == 'schedule' && '2026-11-03T20:00:00-05:00' || inputs.start_at }}
+      INTERVAL: ${{ github.event_name == 'schedule' && '180' || inputs.interval }}
+      CHAIN_UNTIL: ${{ github.event_name == 'schedule' && '2026-11-04T12:00:00+00:00' || inputs.chain_until }}
+      ONCE: ${{ inputs.once }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements.txt
+      - run: |
+          git config user.name "pa-election-night"
+          git config user.email "alainxc@users.noreply.github.com"
+      - name: Test fetch (no push)
+        if: env.ONCE == 'true'
+        run: python -u poll.py --once --no-push --chambers senate,house
+      - name: Poll
+        if: env.ONCE != 'true'
+        run: |
+          ARGS="--chambers senate,house --interval $INTERVAL --sync-git --max-seconds 20400"
+          if [ -n "$START_AT" ]; then ARGS="$ARGS --start-at $START_AT"; fi
+          python -u poll.py $ARGS
+      - name: Chain the next run
+        if: env.ONCE != 'true' && env.CHAIN_UNTIL != ''
+        run: |
+          now=$(date -u +%s); until=$(date -u -d "$CHAIN_UNTIL" +%s)
+          if [ "$now" -lt "$until" ]; then
+            gh workflow run poll.yml --ref main -f start_at= -f interval="$INTERVAL" -f chain_until="$CHAIN_UNTIL"
+            echo "next run queued"
+          else
+            echo "chain_until passed; not relaunching"
+          fi
+      - name: Save log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: poll-log-${{ github.run_id }}
+          path: logs/
+          if-no-files-found: ignore

@@ -301,6 +301,27 @@ def update_timeline(path, chamber, now_iso, seats_out, odds):
 # ---------------------------------------------------------------------------
 # git
 # ---------------------------------------------------------------------------
+def git_sync():
+    """Pull the latest main (so an overrides.csv edited on github.com is picked up,
+    and so a push after someone else's commit does not fail). Never raises."""
+    try:
+        r = subprocess.run(["git", "pull", "--rebase", "-q"], cwd=HERE, capture_output=True, text=True, timeout=120)
+        return "synced" if r.returncode == 0 else f"pull failed: {r.stderr.strip()[:200]}"
+    except Exception as e:  # noqa: BLE001
+        return f"pull error: {e}"
+
+
+def dispatch_pages():
+    """Inside GitHub Actions a push made with GITHUB_TOKEN does not trigger the
+    Pages workflow, so start it explicitly. Never raises."""
+    try:
+        r = subprocess.run(["gh", "workflow", "run", "pages.yml", "--ref", "main"], cwd=HERE,
+                           capture_output=True, text=True, timeout=60)
+        return "pages deploy queued" if r.returncode == 0 else f"pages dispatch failed: {r.stderr.strip()[:120]}"
+    except Exception as e:  # noqa: BLE001
+        return f"pages dispatch error: {e}"
+
+
 def git_push(paths, message):
     try:
         subprocess.run(["git", "add", "--"] + paths, cwd=HERE, check=True, capture_output=True, text=True)
@@ -310,8 +331,15 @@ def git_push(paths, message):
         subprocess.run(["git", "commit", "-q", "-m", message], cwd=HERE, check=True, capture_output=True, text=True)
         r = subprocess.run(["git", "push", "-q"], cwd=HERE, capture_output=True, text=True, timeout=120)
         if r.returncode != 0:
-            return f"push failed: {r.stderr.strip()[:200]}"
-        return "pushed"
+            # remote moved on (another pusher, an edit on github.com): rebase and retry once
+            subprocess.run(["git", "pull", "--rebase", "-q"], cwd=HERE, capture_output=True, text=True, timeout=120)
+            r = subprocess.run(["git", "push", "-q"], cwd=HERE, capture_output=True, text=True, timeout=120)
+            if r.returncode != 0:
+                return f"push failed: {r.stderr.strip()[:200]}"
+        out = "pushed"
+        if os.environ.get("GITHUB_ACTIONS"):
+            out += "; " + dispatch_pages()
+        return out
     except subprocess.TimeoutExpired:
         return "push timed out"
     except subprocess.CalledProcessError as e:
@@ -408,6 +436,8 @@ def main():
     ap.add_argument("--replay", help="directory of returns-shaped snapshots to play instead of fetching")
     ap.add_argument("--replay-every", type=int, default=1, help="use every Nth snapshot")
     ap.add_argument("--reset-state", action="store_true", help="forget damping state and timelines first")
+    ap.add_argument("--max-seconds", type=int, help="exit cleanly after this many seconds of polling (for chained cloud jobs)")
+    ap.add_argument("--sync-git", action="store_true", help="git pull --rebase before every cycle (cloud mode)")
     a = ap.parse_args()
     a.chambers = [c.strip() for c in a.chambers.split(",") if c.strip()]
     log_setup()
@@ -422,7 +452,10 @@ def main():
         wait = (t0 - dt.datetime.now(dt.timezone.utc)).total_seconds()
         if wait > 0:
             logging.info("waiting %.0f s until %s", wait, a.start_at)
-            time.sleep(wait)
+        # sleep in short chunks and re-read the wall clock: a single long sleep
+        # is stretched by the time the Mac spends asleep with the lid closed.
+        while (t0 - dt.datetime.now(dt.timezone.utc)).total_seconds() > 0:
+            time.sleep(min(60, max(1, (t0 - dt.datetime.now(dt.timezone.utc)).total_seconds())))
     client = fr.Client()
     client.s.headers["User-Agent"] = "pa-election-night tracker/0.1 (+python-requests)"
     replay_files = None
@@ -431,8 +464,13 @@ def main():
         replay_files = replay_files[::a.replay_every] + ([replay_files[-1]] if (len(replay_files) - 1) % a.replay_every else [])
         logging.info("replay: %d snapshots from %s", len(replay_files), a.replay)
     cycle, backoff, idx = 0, 1.0, 0
+    started = time.time()
     while True:
         cycle += 1
+        if a.sync_git and not a.no_push:
+            sync = git_sync()
+            if sync != "synced":
+                logging.warning("cycle %d: %s", cycle, sync)
         rf = None
         if replay_files is not None:
             if idx >= len(replay_files):
@@ -455,6 +493,9 @@ def main():
                 backoff = min(backoff * 1.5, 4.0)
                 logging.error("cycle %d failed: %s; backoff x%.1f", cycle, e, backoff)
         if a.once:
+            break
+        if a.max_seconds and time.time() - started + a.interval * backoff > a.max_seconds:
+            logging.info("max-seconds reached after %d cycles; exiting cleanly", cycle)
             break
         time.sleep(a.interval * backoff)
 
