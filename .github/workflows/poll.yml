@@ -61,7 +61,7 @@ jobs:
           if [ -n "$START_AT" ] && [ "$START_AT" != "now" ]; then ARGS="$ARGS --start-at $START_AT"; fi
           python -u poll.py $ARGS
       - name: Chain the next run
-        if: env.ONCE != 'true' && env.CHAIN_UNTIL != ''
+        if: ${{ !cancelled() && env.ONCE != 'true' && env.CHAIN_UNTIL != '' }}
         run: |
           now=$(date -u +%s); until=$(date -u -d "$CHAIN_UNTIL" +%s)
           if [ "$now" -lt "$until" ]; then

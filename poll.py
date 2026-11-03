@@ -447,6 +447,7 @@ def main():
             if os.path.exists(p):
                 os.remove(p)
         logging.info("state and timelines reset")
+    started = time.time()  # --max-seconds counts from launch, including any wait
     if a.start_at:
         t0 = dt.datetime.fromisoformat(a.start_at)
         wait = (t0 - dt.datetime.now(dt.timezone.utc)).total_seconds()
@@ -464,7 +465,6 @@ def main():
         replay_files = replay_files[::a.replay_every] + ([replay_files[-1]] if (len(replay_files) - 1) % a.replay_every else [])
         logging.info("replay: %d snapshots from %s", len(replay_files), a.replay)
     cycle, backoff, idx = 0, 1.0, 0
-    started = time.time()
     while True:
         cycle += 1
         if a.sync_git and not a.no_push:
