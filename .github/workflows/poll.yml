@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       start_at:
-        description: "ISO time to begin polling (blank = now)"
+        description: "ISO time to begin polling, or now"
         default: "2026-11-03T20:00:00-05:00"
       interval:
         description: "seconds between cycles"
@@ -58,14 +58,14 @@ jobs:
         if: env.ONCE != 'true'
         run: |
           ARGS="--chambers senate,house --interval $INTERVAL --sync-git --max-seconds 20400"
-          if [ -n "$START_AT" ]; then ARGS="$ARGS --start-at $START_AT"; fi
+          if [ -n "$START_AT" ] && [ "$START_AT" != "now" ]; then ARGS="$ARGS --start-at $START_AT"; fi
           python -u poll.py $ARGS
       - name: Chain the next run
         if: env.ONCE != 'true' && env.CHAIN_UNTIL != ''
         run: |
           now=$(date -u +%s); until=$(date -u -d "$CHAIN_UNTIL" +%s)
           if [ "$now" -lt "$until" ]; then
-            gh workflow run poll.yml --ref main -f start_at= -f interval="$INTERVAL" -f chain_until="$CHAIN_UNTIL"
+            gh workflow run poll.yml --ref main -f start_at=now -f interval="$INTERVAL" -f chain_until="$CHAIN_UNTIL"
             echo "next run queued"
           else
             echo "chain_until passed; not relaunching"
