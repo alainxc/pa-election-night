@@ -16,3 +16,7 @@ documented model (`needle.py` / `docs/assets/needle.js`) and are not calls.
 
 Public data only. Nothing on the site is fabricated: unknown values are shown as
 "no returns yet".
+
+## Running it
+
+The poller runs in GitHub Actions (`.github/workflows/poll.yml`): start, watch and stop it from the Actions tab or the GitHub mobile app. A laptop fallback (`./start.sh`, `./arm.sh`) is described in `OPERATIONS.md`.
